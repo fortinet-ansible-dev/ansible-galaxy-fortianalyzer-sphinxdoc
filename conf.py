@@ -18,24 +18,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Fortinet FortiAnalyzer Ansible Collection'
-copyright = '2021, Fortinet'
+copyright = '2021-2023, Fortinet'
 author = 'Fortinet'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0.3'
-
-html_static_path = ['_static']
-
-html_context = {
-    'css_files': [
-        '_static/theme_overrides.css',  # override wide tables in RTD theme
-        '_static/collapse.css',
-        ],
-     }
-
-html_js_files = [
-    'util.js',
-]
+release = '1.1.0'
 
 master_doc = 'index'
 
@@ -67,4 +54,12 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html4_writer=True
+
+html_css_files = [
+    'theme_overrides.css',
+    'collapse.css',
+]
+
+html_js_files = [
+    'util.js',
+]

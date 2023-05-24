@@ -1,13 +1,13 @@
-:source: faz_cli_system_log_ratelimit_ratelimits.py
+:source: faz_um_image_upgrade_ext.py
 
 :orphan:
 
-.. _faz_cli_system_log_ratelimit_ratelimits:
+.. _faz_um_image_upgrade_ext:
 
-faz_cli_system_log_ratelimit_ratelimits -- Per device or ADOM log rate limits.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_um_image_upgrade_ext -- Update the firmware of specific device.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.1.0
 
 .. contents::
    :local:
@@ -38,23 +38,11 @@ FortiAnalyzer Version Compatibility
  <table>
  <tr>
  <td></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  <td><code class="docutils literal notranslate">7.2.1 </code></td>
  <td><code class="docutils literal notranslate">7.2.2 </code></td>
  </tr>
  <tr>
- <td>cli_system_log_ratelimit_ratelimits</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
- <td>yes</td>
+ <td>um_image_upgrade_ext</td>
  <td>yes</td>
  <td>yes</td>
  </tr>
@@ -71,119 +59,119 @@ Parameters
  <ul>
  <li><span class="li-head">enable_log</span> - Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">log_path</span> - The path to save log. Used if enable_log is true. Please use absolute path instead of relative path. If the log_path setting is incorrect, the log will be saved in /tmp/fortianalyzer.ansible.log<span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> default: "/tmp/fortianalyzer.ansible.log"</span> </li>
- <li><span class="li-head">proposed_method</span> - The overridden method for the underlying Json RPC request <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> choices: set, update, add</span> </li>
  <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiAnalyzer API structure, module continues to execute without validating parameters <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">cli_system_log_ratelimit_ratelimits</span> - Per device or ADOM log rate limits. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">um_image_upgrade_ext</span> - Update the firmware of specific device. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">filter</span> - Device or ADOM filter according to filter-type setting, wildcard expression supported. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">create_task</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table border="1">
  <tr>
  <td></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  <td><code class="docutils literal notranslate">7.2.1 </code></td>
  <td><code class="docutils literal notranslate">7.2.2 </code></td>
  </tr>
  <tr>
- <td>filter</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>create_task</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">filter-type</span> - Device filter type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [devid, adom]</span>  <span class="li-normal">default: devid</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">device</span> - No description for the parameter <span class="li-normal">type: array</span>
+ <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table border="1">
  <tr>
  <td></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  <td><code class="docutils literal notranslate">7.2.1 </code></td>
  <td><code class="docutils literal notranslate">7.2.2 </code></td>
  </tr>
  <tr>
- <td>filter-type</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>device</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
- </li>
- <li><span class="li-head">id</span> - Filter ID. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <ul class="ul-self">
+ <li><span class="li-head">name</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table border="1">
  <tr>
  <td></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  <td><code class="docutils literal notranslate">7.2.1 </code></td>
  <td><code class="docutils literal notranslate">7.2.2 </code></td>
  </tr>
  <tr>
- <td>id</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>name</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ratelimit</span> - Maximum log rate limit. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">vdom</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table border="1">
  <tr>
  <td></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
  <td><code class="docutils literal notranslate">7.2.1 </code></td>
  <td><code class="docutils literal notranslate">7.2.2 </code></td>
  </tr>
  <tr>
- <td>ratelimit</td>
+ <td>vdom</td>
  <td>True</td>
  <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ </ul>
+ <li><span class="li-head">flags</span> - No description for the parameter <span class="li-normal">type: str</span>  <span class="li-normal">choices: [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, f_skip_fortiguard_img, f_preview]</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <div id="label9" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>flags</td>
  <td>True</td>
  <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">image</span> - Support version with a build number. <span class="li-normal">type: str</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <div id="label11" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>image</td>
  <td>True</td>
  <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">schedule_time</span> - No description for the parameter <span class="li-normal">type: str</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <table border="1">
+ <tr>
+ <td></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ </tr>
+ <tr>
+ <td>schedule_time</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -222,17 +210,20 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
     tasks:
-      - name: Per device or ADOM log rate limits.
-        faz_cli_system_log_ratelimit_ratelimits:
+      - name: Update the firmware of specific device.
+        faz_um_image_upgrade_ext:
           bypass_validation: False
           rc_succeeded: [0, -2, -3, ...]
           rc_failed: [-2, -3, ...]
-          state: <value in [present, absent]>
-          cli_system_log_ratelimit_ratelimits:
-            filter: <value of string>
-            filter-type: <value in [devid, adom]>
-            id: <value of integer>
-            ratelimit: <value of integer>
+          um_image_upgrade_ext:
+            create_task: <value of string>
+            device:
+              -
+                name: <value of string>
+                vdom: <value of string>
+            flags: <value in [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, ...]>
+            image: <value of string>
+            schedule_time: <value of string>
   
 
 

@@ -1,15 +1,8 @@
-
 Release Notes
 ==============================
 
-
-
-
 Release Galaxy 1.0.0
 ~~~~~~~~~~~~~~~~~~~~~~
-
-|
-
 
 Release Target
 ---------------
@@ -38,11 +31,9 @@ Features
 -  Flexible error handling mechanism.
 
 
+
 Release Galaxy 1.0.1
 ~~~~~~~~~~~~~~~~~~~~~
-
-|
-
 
 Release Target
 ---------------
@@ -66,7 +57,6 @@ Release Target
 
 FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0`` and ``v7.2``
 
-
 Major Changes
 --------------
 
@@ -75,15 +65,9 @@ Major Changes
 - Supported Ansible Changelogs.
 
 
+
 Release Galaxy 1.0.3
 ~~~~~~~~~~~~~~~~~~~~
-
-
-Release Summary
----------------
-
-Release 1.0.3 for Automation Hub.
-
 
 Release Target
 ---------------
@@ -93,7 +77,26 @@ FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0`` and ``v7.2``
 Major Changes
 -------------
 
-- deprecate default genrated README in plugin directory.
-- update meta/runtime.yaml requirement.
-- update python and ansible requirement in top-level README.
+- Deprecate default genrated README in plugin directory.
+- Update meta/runtime.yaml requirement.
+- Update python and ansible requirement in top-level README.
 
+
+
+Release Galaxy 1.1.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0`` and ``v7.2``
+
+Major Changes
+-------------
+
+- Support newest versions in ``v6.2``, ``v6.4``, ``v7.0`` and ``v7.2``.
+- Fixed Many sanity test warnings and errors.
+- Fixed an issue where some selectors in faz_fact were named incorrectly.
+- Fixed version_added in the document. The value of this parameter is the version each module first supported in the FortiAnalyzer Ansible Collection.
+- faz_fact and faz_rename support more URLs.
+- Added param log_path for every module. You can specify the place to save the log when enable_log is True.
