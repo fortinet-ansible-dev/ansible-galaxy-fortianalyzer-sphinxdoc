@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Fortinet FortiAnalyzer Ansible Collection documentation v1.1.0!
+Welcome to Fortinet FortiAnalyzer Ansible Collection documentation v1.2.0!
 ===========================================================================
 
 The FortiAnalyzer Ansible Collection provides Ansible modules for configuring FortiAnalyzer devices.
@@ -26,7 +26,7 @@ The FortiAnalyzer Ansible Collection provides Ansible modules for configuring Fo
    playbook.rst
    errors.rst
    help.rst
-
+   faq.rst
 
 
 .. toctree::

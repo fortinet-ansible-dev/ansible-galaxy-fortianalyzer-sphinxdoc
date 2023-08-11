@@ -91,12 +91,31 @@ Release Target
 
 FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0`` and ``v7.2``
 
-Major Changes
+Minor Changes
 -------------
 
 - Support newest versions in ``v6.2``, ``v6.4``, ``v7.0`` and ``v7.2``.
 - Fixed Many sanity test warnings and errors.
-- Fixed an issue where some selectors in faz_fact were named incorrectly.
-- Fixed version_added in the document. The value of this parameter is the version each module first supported in the FortiAnalyzer Ansible Collection.
 - faz_fact and faz_rename support more URLs.
 - Added param log_path for every module. You can specify the place to save the log when enable_log is True.
+
+Bug Fixes
+-------------
+- Fixed an issue where some selectors in faz_fact were named incorrectly.
+- Fixed version_added in the document. The value of this parameter is the version each module first supported in the FortiAnalyzer Ansible Collection.
+
+
+Release Galaxy 1.2.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Support fortianalyzer cloud.
+- Support IAM access token login method.
+- Support Fortianalyze v7.4, 1 new modules, faz_cli_system_socfabric_trustedlist.

@@ -20,6 +20,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
+- Tested with FortiAnalyzer v6.x and v7.x.
 
 
 Requirements
@@ -36,11 +37,12 @@ Parameters
 .. raw:: html
 
  <ul>
+ <li><span class="li-head">access_token</span> -The token to access FortiAnalyzer without using ansible_username and ansible_password. <span class="li-normal">type: str</span> <span class="li-required">required: false</span></li>
  <li><span class="li-head">enable_log</span> - Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
+ <li><span class="li-head">forticloud_access_token</span> - Access token of forticloud analyzer API users. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">log_path</span> - The path to save log. Used if enable_log is true. Please use absolute path instead of relative path. If the log_path setting is incorrect, the log will be saved in /tmp/fortianalyzer.ansible.log<span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> default: "/tmp/fortianalyzer.ansible.log"</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
-
  <li><span class="li-head">rename</span> - Rename An Object. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">target</span> - Attribute to override for target object. <span class="li-normal">type: dict</span> <span class="li-required">required: true</span></li>
@@ -375,6 +377,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/fmgr_cli_system_snmp_user.html#parameters">fmgr_cli_system_snmp_user</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for cli_system_socfabric_trustedlist:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/fmgr_cli_system_socfabric_trustedlist.html#parameters">fmgr_cli_system_socfabric_trustedlist</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for cli_system_sql_customindex:</span></li>
         <ul class="ul-self">
             
@@ -451,6 +459,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -462,6 +471,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -470,9 +480,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -484,6 +497,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -495,6 +509,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -503,9 +518,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_fmupdate_serveraccesspriorities_privateserver</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -517,6 +535,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -528,6 +547,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -536,9 +556,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -550,6 +573,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -561,6 +585,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -569,9 +594,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_group</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -583,6 +611,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -594,6 +623,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -602,9 +632,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_group_member</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -616,6 +649,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -627,6 +661,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -635,9 +670,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_ldap</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -649,6 +687,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -660,6 +699,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -668,9 +708,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_radius</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -682,6 +725,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -693,6 +737,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -701,9 +746,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_tacacs</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -715,6 +763,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -726,6 +775,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -734,9 +784,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -748,6 +801,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -759,6 +813,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -767,9 +822,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user_adom</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -781,6 +839,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -792,6 +851,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -800,9 +860,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user_adomexclude</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -814,6 +877,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -825,6 +889,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -839,6 +904,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -850,6 +916,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -858,9 +925,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user_dashboardtabs</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -872,6 +942,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -883,6 +954,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -891,9 +963,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user_metadata</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -905,6 +980,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -916,6 +992,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -924,9 +1001,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user_policypackage</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -938,6 +1018,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -949,6 +1030,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -957,9 +1039,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_admin_user_restrictdevvdom</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -976,6 +1061,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -987,6 +1073,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -995,9 +1082,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_certificate_ca</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1009,6 +1099,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1020,6 +1111,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1028,9 +1120,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_certificate_crl</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1042,6 +1137,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1053,6 +1149,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1061,9 +1158,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_certificate_local</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1075,6 +1175,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1086,6 +1187,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1094,9 +1196,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_certificate_remote</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1108,6 +1213,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1119,6 +1225,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1127,9 +1234,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_certificate_ssh</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1141,6 +1251,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1152,6 +1263,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1160,9 +1272,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_ha_peer</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1174,6 +1289,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1185,6 +1301,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1193,9 +1310,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_ha_privatepeer</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1207,6 +1327,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1218,6 +1339,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1226,17 +1348,23 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_ha_vip</span> - available versions:
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_interface</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1248,6 +1376,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1259,6 +1388,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1267,19 +1397,26 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_localinpolicy</span> - available versions:
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_localinpolicy6</span> - available versions:
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_log_devicedisable</span> - available versions:
                     <span class="li-normal">6.4.4</span>
@@ -1290,6 +1427,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1298,9 +1436,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_log_maildomain</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1312,6 +1453,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1323,6 +1465,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1331,15 +1474,19 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_log_ratelimit_device</span> - available versions:
                     <span class="li-normal">6.4.8</span>
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1350,9 +1497,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logfetch_clientprofile</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1364,6 +1514,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1375,6 +1526,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1383,9 +1535,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logfetch_clientprofile_devicefilter</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1397,6 +1552,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1408,6 +1564,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1416,9 +1573,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logfetch_clientprofile_logfilter</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1430,6 +1590,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1441,6 +1602,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1449,9 +1611,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logforward</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1463,6 +1628,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1474,6 +1640,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1482,9 +1649,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logforward_devicefilter</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1496,6 +1666,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1507,6 +1678,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1515,9 +1687,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logforward_logfieldexclusion</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1529,6 +1704,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1540,6 +1716,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1548,9 +1725,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logforward_logfilter</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1562,6 +1742,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1573,6 +1754,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1581,9 +1763,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_logforward_logmaskingcustom</span> - available versions:
                     <span class="li-normal">7.0.0</span>
@@ -1594,9 +1779,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_mail</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1608,6 +1796,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1619,6 +1808,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1627,9 +1817,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_metadata_admins</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1641,6 +1834,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1652,6 +1846,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1660,9 +1855,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_ntp_ntpserver</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1674,6 +1872,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1685,6 +1884,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1693,9 +1893,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_report_group</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1707,6 +1910,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1718,6 +1922,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1726,9 +1931,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_route</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1740,6 +1948,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1751,6 +1960,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1759,9 +1969,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_route6</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1773,6 +1986,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1784,6 +1998,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1792,9 +2007,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_saml_fabricidp</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1809,6 +2027,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1817,9 +2036,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_saml_serviceproviders</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1831,6 +2053,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1842,6 +2065,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1850,9 +2074,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_sniffer</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1864,6 +2091,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1875,6 +2103,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1883,9 +2112,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_snmp_community</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1897,6 +2129,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1908,6 +2141,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1916,9 +2150,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_snmp_community_hosts</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1930,6 +2167,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1941,6 +2179,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1949,9 +2188,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_snmp_community_hosts6</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1963,6 +2205,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -1974,6 +2217,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -1982,9 +2226,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_snmp_user</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -1996,6 +2243,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2007,6 +2255,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2015,9 +2264,15 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
+        </li>
+        <li><span class="li-required">cli_system_socfabric_trustedlist</span> - available versions:
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_sql_customindex</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2029,6 +2284,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2040,6 +2296,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2048,9 +2305,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_sql_customskipidx</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2061,6 +2321,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2072,6 +2333,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2080,9 +2342,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_sql_tsindexfield</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2094,6 +2359,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2105,6 +2371,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2113,9 +2380,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_syslog</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2127,6 +2397,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2138,6 +2409,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2146,9 +2418,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">cli_system_workflow_approvalmatrix</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2180,6 +2455,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2191,6 +2467,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2199,9 +2476,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">dvmdb_device_vdom</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2213,6 +2493,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2224,6 +2505,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2232,9 +2514,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">dvmdb_folder</span> - available versions:
                     <span class="li-normal">6.4.2</span>
@@ -2247,6 +2532,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2255,9 +2541,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
         <li><span class="li-required">dvmdb_group</span> - available versions:
                     <span class="li-normal">6.2.1</span>
@@ -2269,6 +2558,7 @@ Parameters
                     <span class="li-normal">6.2.8</span>
                     <span class="li-normal">6.2.9</span>
                     <span class="li-normal">6.2.10</span>
+                    <span class="li-normal">6.2.11</span>
                     <span class="li-normal">6.4.1</span>
                     <span class="li-normal">6.4.2</span>
                     <span class="li-normal">6.4.3</span>
@@ -2280,6 +2570,7 @@ Parameters
                     <span class="li-normal">6.4.9</span>
                     <span class="li-normal">6.4.10</span>
                     <span class="li-normal">6.4.11</span>
+                    <span class="li-normal">6.4.12</span>
                     <span class="li-normal">7.0.0</span>
                     <span class="li-normal">7.0.1</span>
                     <span class="li-normal">7.0.2</span>
@@ -2288,9 +2579,12 @@ Parameters
                     <span class="li-normal">7.0.5</span>
                     <span class="li-normal">7.0.6</span>
                     <span class="li-normal">7.0.7</span>
+                    <span class="li-normal">7.0.8</span>
                     <span class="li-normal">7.2.0</span>
                     <span class="li-normal">7.2.1</span>
                     <span class="li-normal">7.2.2</span>
+                    <span class="li-normal">7.2.3</span>
+                    <span class="li-normal">7.4.0</span>
         </li>
     </ul>
     </div>
@@ -2535,6 +2829,10 @@ Parameters
         <li><span class="li-normal">params for cli_system_snmp_user:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">user</span></li>
+        </ul>
+        <li><span class="li-normal">params for cli_system_socfabric_trustedlist:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">trusted-list</span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_sql_customindex:</span></li>
         <ul class="ul-self">
