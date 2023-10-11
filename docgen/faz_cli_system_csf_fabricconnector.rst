@@ -1,13 +1,13 @@
-:source: faz_cli_system_report_autocache.py
+:source: faz_cli_system_csf_fabricconnector.py
 
 :orphan:
 
-.. _faz_cli_system_report_autocache:
+.. _faz_cli_system_csf_fabricconnector:
 
-faz_cli_system_report_autocache -- Report auto-cache settings.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_csf_fabricconnector -- Fabric connector configuration.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.3.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -60,18 +60,18 @@ FortiAnalyzer Version Compatibility
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -91,19 +91,19 @@ FortiAnalyzer Version Compatibility
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -118,16 +118,16 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -137,18 +137,18 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
@@ -170,9 +170,10 @@ Parameters
  <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiAnalyzer API structure, module continues to execute without validating parameters <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">cli_system_report_autocache</span> - Report auto-cache settings. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">cli_system_csf_fabricconnector</span> - Fabric connector configuration. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">aggressive-schedule</span> - Enable/disable auto-cache on schedule reports aggressively. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">accprofile</span> - Override access profile. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
  <tr>
@@ -192,18 +193,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -223,19 +224,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -250,16 +251,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -269,24 +270,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">order</span> - The order of which SQL log table is processed first. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [oldest-first]</span>  <span class="li-normal">default: oldest-first</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">configuration-write-access</span> - Enable/disable downstream device write access to configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
  <tr>
@@ -306,18 +307,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -337,19 +338,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -364,16 +365,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -383,24 +384,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">status</span> - Enable/disable sql report auto cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">serial</span> - Serial. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
  <tr>
@@ -420,120 +421,6 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">sche-rpt-only</span> - Enable/disable auto-cache on scheduled reports only. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
- <div id="label7" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>None</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -600,8 +487,8 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -614,15 +501,15 @@ Parameters
  <td>False</td>
  <td>False</td>
  <td>False</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
@@ -651,21 +538,25 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - collections:
+  - hosts: fortianalyzer_inventory
+    collections:
       - fortinet.fortianalyzer
     connection: httpapi
-    hosts: fortianalyzer_inventory
-    tasks:
-      - faz_cli_system_report_autocache:
-          cli_system_report_autocache:
-            aggressive-schedule: disable
-            order: oldest-first
-            status: disable
-        name: Report auto-cache settings.
     vars:
+      ansible_httpapi_use_ssl: True
+      ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
+    tasks:
+      - name: Fabric connector configuration.
+        faz_cli_system_csf_fabricconnector:
+          bypass_validation: False
+          rc_succeeded: [0, -2, -3, ...]
+          rc_failed: [-2, -3, ...]
+          state: <value in [present, absent]>
+          cli_system_csf_fabricconnector:
+            accprofile: <value of string>
+            configuration-write-access: <value in [disable, enable]>
+            serial: <value of string>
   
 
 

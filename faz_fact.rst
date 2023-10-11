@@ -45,10 +45,10 @@ Parameters
     <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
     <li><span class="li-head">facts</span> - Gathering fortianalyzer facts. <span class="li-normal">type: dict</span></li>
     <ul class="ul-self">
-      <li><span class="li-head">fields</span> - Field filtering expression list: only fields matching all the filters are returned for an item  <span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
-      <li><span class="li-head">filter</span> - Item filtering expression list: only items matching all the filters are returned <span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
-      <li><span class="li-head">option</span> - Option list: see more details in FNDN API documents.<span class="li-normal">type: str</span> <span class="li-required">required: false</span></li>
-      <li><span class="li-head">sortings</span> - Sorting rules list: items are returned in ascending(1) or descending(-1) order of fields in the list<span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
+      <li><span class="li-head">fields</span> - Limit the output by returning only the attributes specified in the string array.  <span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
+      <li><span class="li-head">filter</span> - Filter the result according to a set of criteria. <span class="li-normal">type: list</span> <span class="li-required">required: false</span></li>
+      <li><span class="li-head">option</span> - Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. See more details in FNDN API documents. <span class="li-normal">type: str</span> <span class="li-required">required: false</span></li>
+      <li><span class="li-head">sortings</span> - Sorting rules list: items are returned in ascending(1) or descending(-1) order of fields in the list. <span class="li-normal">type: list of dict</span> <span class="li-required">required: false</span></li>
       <li><span class="li-head">selector</span> - Selector of the retrieved fortianalyzer facts <span class="li-normal">type: str</span> <span class="li-required">choices:</span></li>
       <li style="list-style: none;">
       <section class="accordion">
@@ -178,6 +178,12 @@ Parameters
               </li>
               <li><span class="li-required">cli_system_connector</span> - available versions:
               </li>
+              <li><span class="li-required">cli_system_csf</span> - available versions:
+              </li>
+              <li><span class="li-required">cli_system_csf_fabricconnector</span> - available versions:
+              </li>
+              <li><span class="li-required">cli_system_csf_trustedlist</span> - available versions:
+              </li>
               <li><span class="li-required">cli_system_dns</span> - available versions:
               </li>
               <li><span class="li-required">cli_system_docker</span> - available versions:
@@ -255,6 +261,8 @@ Parameters
               <li><span class="li-required">cli_system_log_ioc</span> - available versions:
               </li>
               <li><span class="li-required">cli_system_log_maildomain</span> - available versions:
+              </li>
+              <li><span class="li-required">cli_system_log_pcapfile</span> - available versions:
               </li>
               <li><span class="li-required">cli_system_log_ratelimit</span> - available versions:
               </li>
@@ -489,6 +497,8 @@ Parameters
               <li><span class="li-required">ueba_endpoints</span> - available versions:
               </li>
               <li><span class="li-required">ueba_endpoints_stats</span> - available versions:
+              </li>
+              <li><span class="li-required">ueba_endpoints_vuln</span> - available versions:
               </li>
               <li><span class="li-required">ueba_endusers</span> - available versions:
               </li>
@@ -728,6 +738,17 @@ Parameters
             <li><span class="li-normal">params for cli_system_connector:</span></li>
             <ul class="ul-self">
             </ul>
+            <li><span class="li-normal">params for cli_system_csf:</span></li>
+            <ul class="ul-self">
+            </ul>
+            <li><span class="li-normal">params for cli_system_csf_fabricconnector:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">fabric-connector</span></li>
+            </ul>
+            <li><span class="li-normal">params for cli_system_csf_trustedlist:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">trusted-list</span></li>
+            </ul>
             <li><span class="li-normal">params for cli_system_dns:</span></li>
             <ul class="ul-self">
             </ul>
@@ -855,6 +876,9 @@ Parameters
             <li><span class="li-normal">params for cli_system_log_maildomain:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">mail-domain</span></li>
+            </ul>
+            <li><span class="li-normal">params for cli_system_log_pcapfile:</span></li>
+            <ul class="ul-self">
             </ul>
             <li><span class="li-normal">params for cli_system_log_ratelimit:</span></li>
             <ul class="ul-self">
@@ -1324,6 +1348,10 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
             </ul>
+            <li><span class="li-normal">params for ueba_endpoints_vuln:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">adom</span></li>
+            </ul>
             <li><span class="li-normal">params for ueba_endusers:</span></li>
             <ul class="ul-self">
                 <li><span class="li-normal">adom</span></li>
@@ -1367,7 +1395,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: gathering fortianalyzer facts
-    hosts: fortianalyzer01
+    hosts: fortianalyzers
     gather_facts: no
     connection: httpapi
     collections:
@@ -1377,53 +1405,27 @@ Examples
       ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
     tasks:
-      - name: retrieve all the scripts
+      - name: fetch adom
         faz_fact:
+          enable_log: true
           facts:
-            selector: "dvmdb_script"
-            params:
-              adom: "root" # global or null or ''
-              script: "" # or null
-
-      - name: retrive all the interfaces
-        faz_fact:
-          facts:
-            selector: "system_interface"
-            params:
-              interface: "" # or null
-      - name: retrieve the interface port1
-        faz_fact:
-          facts:
-            selector: "system_interface"
-            params:
-              interface: "port1"
-      - name: fetch urlfilter with name urlfilter4
-        faz_fact:
-          facts:
-            selector: "webfilter_urlfilter"
-            params:
-              adom: "root"
-              urlfilter: "" # or null
+            selector: "dvmdb_adom"
             filter:
-              - - "name"
+              - - "os_ver"
                 - "=="
-                - "urlfilter4"
+                - "7.0"
+              - "&&"
+              - - "state"
+                - "=="
+                - "1"
             fields:
-              - "id"
               - "name"
-              - "comment"
+              - "restricted_prds"
+            # option: "object member" # "count", "object member" or "syntax"
             sortings:
-              - "id": 1
-                "name": -1
-      - name: Retrieve device
-        faz_fact:
-          facts:
-            selector: "dvmdb_device"
-            params:
-              adom: "root"
-              device: "" # or null
-            option:
-              - "get meta"
+              - "restricted_prds": -1 # sort based on restricted_prds first (-1, descending)
+              - "oid": 1 # if restricted_prds are same, then, sort based on oid (1, ascending)
+
 
 Return Values
 -------------

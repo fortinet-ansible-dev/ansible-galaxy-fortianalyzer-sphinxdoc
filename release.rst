@@ -119,3 +119,34 @@ Minor Changes
 - Support fortianalyzer cloud.
 - Support IAM access token login method.
 - Support Fortianalyze v7.4, 1 new modules, faz_cli_system_socfabric_trustedlist.
+
+
+Release Galaxy 1.3.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+
+Minor Changes
+-------------
+
+- Add 4 new modules.
+- Add module digest page in the document.
+- Support newest patches from v6.2 to v7.4
+
+Bugfixes
+--------
+
+- Fixed the bug that would report an error when providing access_token and username/password at the same time.
+- Improve code robustness.
+
+New Modules
+-----------
+
+- fortinet.fortianalyzer.faz_cli_system_csf - Add this device to a Security Fabric or set up a new Security Fabric on this device.
+- fortinet.fortianalyzer.faz_cli_system_csf_fabricconnector - Fabric connector configuration.
+- fortinet.fortianalyzer.faz_cli_system_csf_trustedlist - Pre-authorized and blocked security fabric nodes.
+- fortinet.fortianalyzer.faz_cli_system_log_pcapfile - Log pcap-file settings.

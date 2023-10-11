@@ -1,13 +1,13 @@
-:source: faz_cli_fmupdate_webspam_fgdsetting_serveroverride.py
+:source: faz_cli_system_csf_trustedlist.py
 
 :orphan:
 
-.. _faz_cli_fmupdate_webspam_fgdsetting_serveroverride:
+.. _faz_cli_system_csf_trustedlist:
 
-faz_cli_fmupdate_webspam_fgdsetting_serveroverride -- Server override configure.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_csf_trustedlist -- Pre-authorized and blocked security fabric nodes.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.3.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -60,18 +60,18 @@ FortiAnalyzer Version Compatibility
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -91,19 +91,19 @@ FortiAnalyzer Version Compatibility
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -118,16 +118,16 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -137,18 +137,18 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
@@ -170,10 +170,10 @@ Parameters
  <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiAnalyzer API structure, module continues to execute without validating parameters <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">cli_fmupdate_webspam_fgdsetting_serveroverride</span> - Server override configure. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">cli_system_csf_trustedlist</span> - Pre-authorized and blocked security fabric nodes. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">servlist</span> - No description for the parameter <span class="li-normal">type: array</span>
- <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">action</span> - Security fabric authorization action. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [accept, deny]</span>  <span class="li-normal">default: accept</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
  <tr>
@@ -193,18 +193,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -224,19 +224,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -251,16 +251,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -270,24 +270,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">id</span> - Override server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ </li>
+ <li><span class="li-head">authorization-type</span> - Authorization type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [serial, certificate]</span>  <span class="li-normal">default: serial</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
  <tr>
@@ -307,18 +307,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -338,19 +338,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -365,16 +365,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -384,24 +384,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ip</span> - IPv4 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">certificate</span> - Certificate. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
  <tr>
@@ -421,18 +421,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -452,19 +452,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -479,16 +479,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -498,24 +498,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">ip6</span> - IPv6 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">downstream-authorization</span> - Trust authorizations by this nodes administrator. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
  <tr>
@@ -535,18 +535,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -566,19 +566,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -593,16 +593,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -612,24 +612,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">port</span> - Port number to use when contacting FortiGuard (1 - 65535, default = 443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ha-members</span> - HA members. <span class="li-normal">type: str</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
  <tr>
@@ -649,18 +649,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -680,19 +680,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -707,16 +707,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -726,24 +726,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">service-type</span> - Override service type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgd, fgc, fsa, fgfq, geoip, iot-collect]</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">index</span> - Index of the downstream in tree. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <table>
  <tr>
@@ -763,18 +763,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -794,19 +794,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -821,16 +821,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -840,25 +840,24 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- </ul>
- <li><span class="li-head">status</span> - Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">name</span> - Name. <span class="li-normal">type: str</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <table>
  <tr>
@@ -878,18 +877,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -909,19 +908,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -936,16 +935,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -955,18 +954,132 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>True</td>
+ </tr>
+ </table>
+ </div>
+ </li>
+ <li><span class="li-head">serial</span> - Serial. <span class="li-normal">type: str</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <table>
+ <tr>
+ <td><code class="docutils literal notranslate">6.2.0 </code></td>
+ <td><code class="docutils literal notranslate">6.2.1 </code></td>
+ <td><code class="docutils literal notranslate">6.2.2 </code></td>
+ <td><code class="docutils literal notranslate">6.2.3 </code></td>
+ <td><code class="docutils literal notranslate">6.2.4 </code></td>
+ <td><code class="docutils literal notranslate">6.2.5 </code></td>
+ <td><code class="docutils literal notranslate">6.2.6 </code></td>
+ <td><code class="docutils literal notranslate">6.2.7 </code></td>
+ <td><code class="docutils literal notranslate">6.2.8 </code></td>
+ <td><code class="docutils literal notranslate">6.2.9 </code></td>
+ <td><code class="docutils literal notranslate">6.2.10 </code></td>
+ <td><code class="docutils literal notranslate">6.2.11 </code></td>
+ <td><code class="docutils literal notranslate">6.2.12 </code></td>
+ </tr>
+ <tr>
+ <td>None</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>None</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">6.4.0 </code></td>
+ <td><code class="docutils literal notranslate">6.4.1 </code></td>
+ <td><code class="docutils literal notranslate">6.4.2 </code></td>
+ <td><code class="docutils literal notranslate">6.4.3 </code></td>
+ <td><code class="docutils literal notranslate">6.4.4 </code></td>
+ <td><code class="docutils literal notranslate">6.4.5 </code></td>
+ <td><code class="docutils literal notranslate">6.4.6 </code></td>
+ <td><code class="docutils literal notranslate">6.4.7 </code></td>
+ <td><code class="docutils literal notranslate">6.4.8 </code></td>
+ <td><code class="docutils literal notranslate">6.4.9 </code></td>
+ <td><code class="docutils literal notranslate">6.4.10 </code></td>
+ <td><code class="docutils literal notranslate">6.4.11 </code></td>
+ <td><code class="docutils literal notranslate">6.4.12 </code></td>
+ <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ </tr>
+ <tr>
+ <td>None</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.0.0 </code></td>
+ <td><code class="docutils literal notranslate">7.0.1 </code></td>
+ <td><code class="docutils literal notranslate">7.0.2 </code></td>
+ <td><code class="docutils literal notranslate">7.0.3 </code></td>
+ <td><code class="docutils literal notranslate">7.0.4 </code></td>
+ <td><code class="docutils literal notranslate">7.0.5 </code></td>
+ <td><code class="docutils literal notranslate">7.0.6 </code></td>
+ <td><code class="docutils literal notranslate">7.0.7 </code></td>
+ <td><code class="docutils literal notranslate">7.0.8 </code></td>
+ <td><code class="docutils literal notranslate">7.0.9 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.2.0 </code></td>
+ <td><code class="docutils literal notranslate">7.2.1 </code></td>
+ <td><code class="docutils literal notranslate">7.2.2 </code></td>
+ <td><code class="docutils literal notranslate">7.2.3 </code></td>
+ <td><code class="docutils literal notranslate">7.2.4 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ </tr>
+ <tr>
+ <td><code class="docutils literal notranslate">7.4.0 </code></td>
+ <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ </tr>
+ <tr>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
@@ -995,19 +1108,30 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - collections:
+  - hosts: fortianalyzer_inventory
+    collections:
       - fortinet.fortianalyzer
     connection: httpapi
-    hosts: fortianalyzer_inventory
-    tasks:
-      - faz_cli_fmupdate_webspam_fgdsetting_serveroverride:
-          cli_fmupdate_webspam_fgdsetting_serveroverride:
-            status: disable
-        name: Server override configure.
     vars:
+      ansible_httpapi_use_ssl: True
+      ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
+    tasks:
+      - name: Pre-authorized and blocked security fabric nodes.
+        faz_cli_system_csf_trustedlist:
+          bypass_validation: False
+          rc_succeeded: [0, -2, -3, ...]
+          rc_failed: [-2, -3, ...]
+          state: <value in [present, absent]>
+          cli_system_csf_trustedlist:
+            action: <value in [accept, deny]>
+            authorization-type: <value in [serial, certificate]>
+            certificate: <value of string>
+            downstream-authorization: <value in [disable, enable]>
+            ha-members: <value of string>
+            index: <value of integer>
+            name: <value of string>
+            serial: <value of string>
   
 
 

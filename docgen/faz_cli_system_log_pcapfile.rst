@@ -1,13 +1,13 @@
-:source: faz_cli_fmupdate_fdssetting_pushoverride.py
+:source: faz_cli_system_log_pcapfile.py
 
 :orphan:
 
-.. _faz_cli_fmupdate_fdssetting_pushoverride:
+.. _faz_cli_system_log_pcapfile:
 
-faz_cli_fmupdate_fdssetting_pushoverride -- Enable/disable push updates, and override the default IP address and port used by FortiGuard to send antivirus and IPS push messages for clients.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_log_pcapfile -- Log pcap-file settings.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.3.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -60,18 +60,18 @@ FortiAnalyzer Version Compatibility
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -91,19 +91,19 @@ FortiAnalyzer Version Compatibility
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -118,16 +118,16 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -137,18 +137,18 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
@@ -170,9 +170,9 @@ Parameters
  <li><span class="li-head">bypass_validation</span> - Only set to True when module schema diffs with FortiAnalyzer API structure, module continues to execute without validating parameters <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
- <li><span class="li-head">cli_fmupdate_fdssetting_pushoverride</span> - Enable/disable push updates, and override the default IP address and port used by FortiGuard to send antivirus and IPS push messages for... <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">cli_system_log_pcapfile</span> - Log pcap-file settings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">ip</span> - External or virtual IP address of the NAT device that will forward push messages to the FortiManager unit. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">download-mode</span> - Download mode for pcap files. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [plain, zip, zip-with-password]</span>  <span class="li-normal">default: zip</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
  <tr>
@@ -192,18 +192,18 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">6.4.0 </code></td>
@@ -223,19 +223,19 @@ Parameters
  </tr>
  <tr>
  <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.0.0 </code></td>
@@ -250,16 +250,16 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.2.0 </code></td>
@@ -269,246 +269,18 @@ Parameters
  <td><code class="docutils literal notranslate">7.2.4 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
+ <td>False</td>
  </tr>
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
  </tr>
  <tr>
- <td>True</td>
- <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">port</span> - Receiving port number on the NAT device (1 - 65535, default = 9443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 9443</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
- <div id="label3" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- </tr>
- </table>
- </div>
- </li>
- <li><span class="li-head">status</span> - Enable/disable push updates for clients (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <table>
- <tr>
- <td><code class="docutils literal notranslate">6.2.0 </code></td>
- <td><code class="docutils literal notranslate">6.2.1 </code></td>
- <td><code class="docutils literal notranslate">6.2.2 </code></td>
- <td><code class="docutils literal notranslate">6.2.3 </code></td>
- <td><code class="docutils literal notranslate">6.2.4 </code></td>
- <td><code class="docutils literal notranslate">6.2.5 </code></td>
- <td><code class="docutils literal notranslate">6.2.6 </code></td>
- <td><code class="docutils literal notranslate">6.2.7 </code></td>
- <td><code class="docutils literal notranslate">6.2.8 </code></td>
- <td><code class="docutils literal notranslate">6.2.9 </code></td>
- <td><code class="docutils literal notranslate">6.2.10 </code></td>
- <td><code class="docutils literal notranslate">6.2.11 </code></td>
- <td><code class="docutils literal notranslate">6.2.12 </code></td>
- </tr>
- <tr>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">6.4.0 </code></td>
- <td><code class="docutils literal notranslate">6.4.1 </code></td>
- <td><code class="docutils literal notranslate">6.4.2 </code></td>
- <td><code class="docutils literal notranslate">6.4.3 </code></td>
- <td><code class="docutils literal notranslate">6.4.4 </code></td>
- <td><code class="docutils literal notranslate">6.4.5 </code></td>
- <td><code class="docutils literal notranslate">6.4.6 </code></td>
- <td><code class="docutils literal notranslate">6.4.7 </code></td>
- <td><code class="docutils literal notranslate">6.4.8 </code></td>
- <td><code class="docutils literal notranslate">6.4.9 </code></td>
- <td><code class="docutils literal notranslate">6.4.10 </code></td>
- <td><code class="docutils literal notranslate">6.4.11 </code></td>
- <td><code class="docutils literal notranslate">6.4.12 </code></td>
- <td><code class="docutils literal notranslate">6.4.13 </code></td>
- </tr>
- <tr>
- <td>None</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.0.0 </code></td>
- <td><code class="docutils literal notranslate">7.0.1 </code></td>
- <td><code class="docutils literal notranslate">7.0.2 </code></td>
- <td><code class="docutils literal notranslate">7.0.3 </code></td>
- <td><code class="docutils literal notranslate">7.0.4 </code></td>
- <td><code class="docutils literal notranslate">7.0.5 </code></td>
- <td><code class="docutils literal notranslate">7.0.6 </code></td>
- <td><code class="docutils literal notranslate">7.0.7 </code></td>
- <td><code class="docutils literal notranslate">7.0.8 </code></td>
- <td><code class="docutils literal notranslate">7.0.9 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.2.0 </code></td>
- <td><code class="docutils literal notranslate">7.2.1 </code></td>
- <td><code class="docutils literal notranslate">7.2.2 </code></td>
- <td><code class="docutils literal notranslate">7.2.3 </code></td>
- <td><code class="docutils literal notranslate">7.2.4 </code></td>
- </tr>
- <tr>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- <td>True</td>
- </tr>
- <tr>
- <td><code class="docutils literal notranslate">7.4.0 </code></td>
- <td><code class="docutils literal notranslate">7.4.1 </code></td>
- </tr>
- <tr>
- <td>True</td>
+ <td>False</td>
  <td>True</td>
  </tr>
  </table>
@@ -537,21 +309,22 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - collections:
+  - hosts: fortianalyzer_inventory
+    collections:
       - fortinet.fortianalyzer
     connection: httpapi
-    hosts: fortianalyzer_inventory
-    tasks:
-      - faz_cli_fmupdate_fdssetting_pushoverride:
-          cli_fmupdate_fdssetting_pushoverride:
-            status: disable
-        name:
-          Enable/disable push updates, and override the default IP address and port
-          used by FortiGuard to send antivirus and IPS push messages for...
     vars:
+      ansible_httpapi_use_ssl: True
+      ansible_httpapi_validate_certs: False
       ansible_httpapi_port: 443
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
+    tasks:
+      - name: Log pcap-file settings.
+        faz_cli_system_log_pcapfile:
+          bypass_validation: False
+          rc_succeeded: [0, -2, -3, ...]
+          rc_failed: [-2, -3, ...]
+          cli_system_log_pcapfile:
+            download-mode: <value in [plain, zip, zip-with-password]>
   
 
 
