@@ -150,3 +150,17 @@ New Modules
 - fortinet.fortianalyzer.faz_cli_system_csf_fabricconnector - Fabric connector configuration.
 - fortinet.fortianalyzer.faz_cli_system_csf_trustedlist - Pre-authorized and blocked security fabric nodes.
 - fortinet.fortianalyzer.faz_cli_system_log_pcapfile - Log pcap-file settings.
+
+
+Release Galaxy 1.3.1
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Bugfixes
+--------
+
+- Require ansible core to be at least 2.13.0
