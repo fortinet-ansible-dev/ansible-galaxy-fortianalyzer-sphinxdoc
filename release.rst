@@ -164,3 +164,21 @@ Bugfixes
 --------
 
 - Require ansible core to be at least 2.13.0
+
+
+Release Galaxy 1.3.2
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Bugfixes
+--------
+
+- Added missing enum values for some arguments.
+- Improve logic to decide whether the local data and remote FortiAnalyzer are
+  the same.
+- Require ansible core to be at least 2.14.0
+- Support FortiAnalyzer 7.0.10

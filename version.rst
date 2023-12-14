@@ -19,7 +19,9 @@ FortiAnalyzer Galaxy Versions Mapping
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 | unified       | 1.3.0               | 2022/10/10     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.3.0``   |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
-| unified       | 1.3.1 ``latest``    | 2022/10/17     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.3.1``   |
+| unified       | 1.3.1               | 2022/10/17     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.3.1``   |
++---------------+---------------------+----------------+----------------------------------------------------------------------+
+| unified       | 1.3.2 ``latest``    | 2022/12/15     | ``ansible-galaxy collection install fortinet.fortianalyzer:1.3.2``   |
 +---------------+---------------------+----------------+----------------------------------------------------------------------+
 
 **Note**: Use ``-f`` option (i.e.
