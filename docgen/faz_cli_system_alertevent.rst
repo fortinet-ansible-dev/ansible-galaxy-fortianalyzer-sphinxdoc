@@ -14,7 +14,10 @@ faz_cli_system_alertevent -- Alert events.
 
    - Possible variable names before 2.0.0: ``variable-name``, ``variable name``, ``variable.name``
    - Corresponding variable names since 2.0.0: ``variable_name``
-
+  
+   FortiAnalyzer Ansible v1.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
 
 .. contents::
    :local:
@@ -28,13 +31,11 @@ Synopsis
 - Examples include all parameters and values need to be adjusted to data sources before usage.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.15.0
 
 
 FortiAnalyzer Version Compatibility
@@ -88,9 +89,11 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -117,8 +120,10 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -148,13 +153,15 @@ FortiAnalyzer Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>True</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
+
 
 
 
@@ -175,7 +182,7 @@ Parameters
  <li><span class="li-head">state</span> - The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">cli_system_alertevent</span> - Alert events. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">alert-destination</span> - No description for the parameter <span class="li-normal">type: array</span>
+ <li><span class="li-head">alert_destination</span> - No description for the parameter <span class="li-normal">type: array</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <table>
@@ -224,9 +231,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -253,8 +262,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -284,8 +295,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -340,9 +353,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -369,8 +384,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -400,15 +417,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">smtp-name</span> - SMTP server name. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">smtp_name</span> - SMTP server name. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <table>
  <tr>
@@ -456,9 +475,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -485,8 +506,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -516,15 +539,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">snmp-name</span> - SNMP trap name. <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">snmp_name</span> - SNMP trap name. <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <table>
  <tr>
@@ -572,9 +597,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -601,8 +628,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -632,15 +661,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">syslog-name</span> - Syslog server name. <span class="li-normal">type: str</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">syslog_name</span> - Syslog server name. <span class="li-normal">type: str</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <table>
  <tr>
@@ -688,9 +719,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -717,8 +750,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -748,8 +783,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -804,9 +841,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -833,8 +872,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -864,8 +905,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -920,9 +963,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -949,8 +994,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -980,8 +1027,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -989,7 +1038,7 @@ Parameters
  </div>
  </li>
  </ul>
- <li><span class="li-head">enable-generic-text</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">enable_generic_text</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <table>
  <tr>
@@ -1037,9 +1086,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1066,8 +1117,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1097,15 +1150,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">enable-severity-filter</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span>  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">enable_severity_filter</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [enable, disable]</span>  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <table>
  <tr>
@@ -1153,9 +1208,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1182,8 +1239,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1213,15 +1272,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">event-time-period</span> - Time period (hours). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span>  <span class="li-normal">default: 0.5</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">event_time_period</span> - Time period (hours). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [0.5, 1, 3, 6, 12, 24, 72, 168]</span>  <span class="li-normal">default: 0.5</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <table>
  <tr>
@@ -1269,9 +1330,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1298,8 +1361,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1329,15 +1394,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">generic-text</span> - Text that must be contained in a log to trigger alert. <span class="li-normal">type: str</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">generic_text</span> - Text that must be contained in a log to trigger alert. <span class="li-normal">type: str</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <table>
  <tr>
@@ -1385,9 +1452,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1414,8 +1483,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1445,8 +1516,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -1501,9 +1574,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1530,8 +1605,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1561,15 +1638,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">num-events</span> - Minimum number of events required within time period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 5, 10, 50, 100]</span>  <span class="li-normal">default: 1</span>  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">num_events</span> - Minimum number of events required within time period. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [1, 5, 10, 50, 100]</span>  <span class="li-normal">default: 1</span>  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <table>
  <tr>
@@ -1617,9 +1696,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1646,8 +1727,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1677,15 +1760,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">severity-filter</span> - Required log severity to trigger alert. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span>  <span class="li-normal">default: high</span>  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">severity_filter</span> - Required log severity to trigger alert. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [high, medium-high, medium, medium-low, low]</span>  <span class="li-normal">default: high</span>  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <table>
  <tr>
@@ -1733,9 +1818,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1762,8 +1849,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1793,15 +1882,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">severity-level-comp</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [>=, =, <=]</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">severity_level_comp</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [>=, =, <=]</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <table>
  <tr>
@@ -1849,9 +1940,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1878,8 +1971,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1909,15 +2004,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">severity-level-logs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [no-check, information, notify, warning, error, critical, alert, emergency]</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">severity_level_logs</span> - No description for the parameter <span class="li-normal">type: array</span> <span class="li-normal">choices: [no-check, information, notify, warning, error, critical, alert, emergency]</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <table>
  <tr>
@@ -1965,9 +2062,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -1994,8 +2093,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  <td>True</td>
@@ -2025,8 +2126,10 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
+ <td>True</td>
  <td>True</td>
  <td>True</td>
  </tr>
@@ -2038,17 +2141,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
 
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -2056,24 +2154,23 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - collections:
-      - fortinet.fortianalyzer
+  - name: Example playbook
     connection: httpapi
-    hosts: fortianalyzer_inventory
+    hosts: fortianalyzers
     tasks:
-      - faz_cli_system_alertevent:
+      - name: Alert events.
+        fortinet.fortianalyzer.faz_cli_system_alertevent:
           cli_system_alertevent:
-            event-time-period: 1
-            generic-text: "an event aleryed"
+            event_time_period: 1
+            generic_text: "an event aleryed"
             name: fooevent
-            num-events: 5
-            severity-filter: high
-            severity-level-comp:
+            num_events: 5
+            severity_filter: high
+            severity_level_comp:
               - ">="
-            severity-level-logs:
+            severity_level_logs:
               - no-check
           state: present
-        name: Alert events.
     vars:
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
@@ -2084,9 +2181,7 @@ Examples
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -2102,9 +2197,6 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
     <li><span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
     <li><span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current fortianalyzer version. <span class="li-normal">returned: if params are not supported in the current version</span> <span class="li-normal">type: list</span></li>
   </ul>
-    
-
-
 
 
 Status
@@ -2125,7 +2217,7 @@ Authors
 
 .. hint::
 
-    If you notice any issues in this documentation, you can create a pull request to improve it.
+   If you notice any issues in this documentation, you can create a pull request to improve it.
 
 
 

@@ -14,7 +14,10 @@ faz_cli_system_csf_fabricconnector -- Fabric connector configuration.
 
    - Possible variable names before 2.0.0: ``variable-name``, ``variable name``, ``variable.name``
    - Corresponding variable names since 2.0.0: ``variable_name``
-
+  
+   FortiAnalyzer Ansible v1.4+ supports both previous argument name and new underscore name.
+   You will receive deprecation warnings if you keep using the previous argument name.
+   You can ignore the warning by setting deprecation_warnings=False in ansible.cfg.
 
 .. contents::
    :local:
@@ -28,13 +31,11 @@ Synopsis
 - Examples include all parameters and values need to be adjusted to data sources before usage.
 
 
-
 Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.15.0
 
 
 FortiAnalyzer Version Compatibility
@@ -88,9 +89,11 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -117,8 +120,10 @@ FortiAnalyzer Version Compatibility
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -148,13 +153,15 @@ FortiAnalyzer Version Compatibility
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
  <td>True</td>
+ <td>True</td>
  </tr>
  </table>
- <p>
+
 
 
 
@@ -223,9 +230,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -252,8 +261,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -283,15 +294,17 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
  </div>
  </li>
- <li><span class="li-head">configuration-write-access</span> - Enable/disable downstream device write access to configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">configuration_write_access</span> - Enable/disable downstream device write access to configuration. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <table>
  <tr>
@@ -339,9 +352,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -368,8 +383,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -399,9 +416,11 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -455,9 +474,11 @@ Parameters
  <td><code class="docutils literal notranslate">6.4.11 </code></td>
  <td><code class="docutils literal notranslate">6.4.12 </code></td>
  <td><code class="docutils literal notranslate">6.4.13 </code></td>
+ <td><code class="docutils literal notranslate">6.4.14 </code></td>
  </tr>
  <tr>
  <td>None</td>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -484,8 +505,10 @@ Parameters
  <td><code class="docutils literal notranslate">7.0.8 </code></td>
  <td><code class="docutils literal notranslate">7.0.9 </code></td>
  <td><code class="docutils literal notranslate">7.0.10 </code></td>
+ <td><code class="docutils literal notranslate">7.0.11 </code></td>
  </tr>
  <tr>
+ <td>False</td>
  <td>False</td>
  <td>False</td>
  <td>False</td>
@@ -515,9 +538,11 @@ Parameters
  <tr>
  <td><code class="docutils literal notranslate">7.4.0 </code></td>
  <td><code class="docutils literal notranslate">7.4.1 </code></td>
+ <td><code class="docutils literal notranslate">7.4.2 </code></td>
  </tr>
  <tr>
  <td>False</td>
+ <td>True</td>
  <td>True</td>
  </tr>
  </table>
@@ -528,17 +553,12 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
 
    - To create or update an object, use state: present directive.
-
    - To delete an object, use state: absent directive
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters rc_failed and rc_succeeded
 
 Examples
@@ -546,24 +566,23 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - hosts: fortianalyzer_inventory
-    collections:
-      - fortinet.fortianalyzer
+  - name: Example playbook
+    hosts: fortianalyzers
     connection: httpapi
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
       - name: Fabric connector configuration.
-        faz_cli_system_csf_fabricconnector:
-          bypass_validation: False
-          rc_succeeded: [0, -2, -3, ...]
-          rc_failed: [-2, -3, ...]
+        fortinet.fortianalyzer.faz_cli_system_csf_fabricconnector:
+          # bypass_validation: false
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
           state: <value in [present, absent]>
           cli_system_csf_fabricconnector:
             accprofile: <value of string>
-            configuration-write-access: <value in [disable, enable]>
+            configuration_write_access: <value in [disable, enable]>
             serial: <value of string>
   
 
@@ -571,9 +590,7 @@ Examples
 Return Values
 -------------
 
-
 Common return values are documented: https://docs.ansible.com/ansible/latest/reference_appendices/common_return_values.html#common-return-values, the following are the fields unique to this module:
-
 
 .. raw:: html
 
@@ -589,9 +606,6 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
     <li><span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
     <li><span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current fortianalyzer version. <span class="li-normal">returned: if params are not supported in the current version</span> <span class="li-normal">type: list</span></li>
   </ul>
-    
-
-
 
 
 Status
@@ -612,7 +626,7 @@ Authors
 
 .. hint::
 
-    If you notice any issues in this documentation, you can create a pull request to improve it.
+   If you notice any issues in this documentation, you can create a pull request to improve it.
 
 
 

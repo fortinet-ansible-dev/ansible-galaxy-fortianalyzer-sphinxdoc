@@ -84,6 +84,40 @@ Examples
                    - user: 'admin'
                      passwd: 'ca$hc0w'
 
+  - name: Example playbook
+    hosts: fortianalyzers
+    connection: httpapi
+    vars:
+      adom: "root"
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
+      ansible_httpapi_port: 443
+    tasks:
+      - name: Login a user
+        fortinet.fortianalyzer.faz_generic:
+          method: "exec"
+          params:
+            - url: "sys/login/user"
+              data:
+                - user: "APIUser"
+                  passwd: "Fortinet1!e"
+      - name: Login another user
+        fortinet.fortianalyzer.faz_generic:
+          json: |
+            {
+             "method":"exec",
+             "params":[
+              {
+                   "url":"sys/login/user",
+                   "data":[
+                      {
+                         "user":"APIUser",
+                         "passwd":"Fortinet1!"
+                      }
+                    ]
+               }
+              ]
+            }
 
 
 Return Values

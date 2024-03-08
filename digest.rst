@@ -261,6 +261,20 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td>/cli/global/system/admin/profile/{profile}/datamask-custom-fields<br>/cli/global/system/admin/profile/{profile}/datamask-custom-fields/{datamask-custom-fields}</td>
   </tr>
   <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_writepasswdprofiles.html">faz_cli_system_admin_profile_writepasswdprofiles</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/admin/profile/{profile}/write-passwd-profiles<br>/cli/global/system/admin/profile/{profile}/write-passwd-profiles/{write-passwd-profiles}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_writepasswduserlist.html">faz_cli_system_admin_profile_writepasswduserlist</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/admin/profile/{profile}/write-passwd-user-list<br>/cli/global/system/admin/profile/{profile}/write-passwd-user-list/{write-passwd-user-list}</td>
+  </tr>
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_radius.html">faz_cli_system_admin_radius</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>

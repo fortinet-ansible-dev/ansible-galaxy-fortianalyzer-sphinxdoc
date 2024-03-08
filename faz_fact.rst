@@ -27,8 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
-
+- ansible>=2.15.0
 
 
 Parameters
@@ -57,454 +56,685 @@ Parameters
         <div class="content">
           <ul class="ul-self">
               <li><span class="li-required">cli_fmupdate_analyzer_virusreport</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_avips_advancedlog</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_avips_webproxy</span> - available versions:
+              <span class="li-normal">6.2.1-7.4.0</span>
               </li>
               <li><span class="li-required">cli_fmupdate_customurllist</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_diskquota</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fctservices</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting_pushoverride</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting_pushoverridetoclient</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting_pushoverridetoclient_announceip</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting_serveroverride</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting_serveroverride_servlist</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fdssetting_updateschedule</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fwmsetting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fwmsetting_upgradetimeout</span> - available versions:
+              <span class="li-normal">7.0.5-7.0.11, >= 7.2.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_multilayer</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_publicnetwork</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_serveraccesspriorities</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_serveraccesspriorities_privateserver</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_serveroverridestatus</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_service</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_fgdsetting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_fgdsetting_serveroverride</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_webproxy</span> - available versions:
+              <span class="li-normal">6.2.1-7.4.0</span>
               </li>
               <li><span class="li-required">cli_metafields_system_admin_user</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_group</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_group_member</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_ldap</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_ldap_adom</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_profile</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_profile_datamaskcustomfields</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
+              </li>
+              <li><span class="li-required">cli_system_admin_profile_writepasswdprofiles</span> - available versions:
+              <span class="li-normal">>= 7.4.2</span>
+              </li>
+              <li><span class="li-required">cli_system_admin_profile_writepasswduserlist</span> - available versions:
+              <span class="li-normal">>= 7.4.2</span>
               </li>
               <li><span class="li-required">cli_system_admin_radius</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_tacacs</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_adom</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_adomexclude</span> - available versions:
+              <span class="li-normal">6.2.1-7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_dashboard</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_dashboardtabs</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_metadata</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_policypackage</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_admin_user_restrictdevvdom</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.3</span>
               </li>
               <li><span class="li-required">cli_system_alertconsole</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_alertemail</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_alertevent</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_alertevent_alertdestination</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_autodelete</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_autodelete_dlpfilesautodeletion</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_autodelete_logautodeletion</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_autodelete_quarantinefilesautodeletion</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_autodelete_reportautodeletion</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_backup_allsettings</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_centralmanagement</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_certificate_ca</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_certificate_crl</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_certificate_local</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_certificate_oftp</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_certificate_remote</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_certificate_ssh</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_connector</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_csf</span> - available versions:
+              <span class="li-normal">>= 7.4.1</span>
               </li>
               <li><span class="li-required">cli_system_csf_fabricconnector</span> - available versions:
+              <span class="li-normal">>= 7.4.1</span>
               </li>
               <li><span class="li-required">cli_system_csf_trustedlist</span> - available versions:
+              <span class="li-normal">>= 7.4.1</span>
               </li>
               <li><span class="li-required">cli_system_dns</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_docker</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.1, >= 6.4.1</span>
               </li>
               <li><span class="li-required">cli_system_fips</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_fortiview_autocache</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_fortiview_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_global</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_guiact</span> - available versions:
+              <span class="li-normal">6.2.1-7.4.0</span>
               </li>
               <li><span class="li-required">cli_system_ha</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_ha_peer</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_ha_privatepeer</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_ha_vip</span> - available versions:
+              <span class="li-normal">>= 7.0.5</span>
               </li>
               <li><span class="li-required">cli_system_interface</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_interface_ipv6</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_interface_member</span> - available versions:
+              <span class="li-normal">>= 6.4.9</span>
               </li>
               <li><span class="li-required">cli_system_localinpolicy</span> - available versions:
+              <span class="li-normal">>= 7.2.0</span>
               </li>
               <li><span class="li-required">cli_system_localinpolicy6</span> - available versions:
+              <span class="li-normal">>= 7.2.0</span>
               </li>
               <li><span class="li-required">cli_system_locallog_disk_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_disk_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_fortianalyzer2_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_fortianalyzer2_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_fortianalyzer3_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_fortianalyzer3_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_fortianalyzer_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_fortianalyzer_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_memory_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_memory_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_syslogd2_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_syslogd2_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_syslogd3_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_syslogd3_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_syslogd_filter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_locallog_syslogd_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_alert</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_devicedisable</span> - available versions:
+              <span class="li-normal">>= 6.4.4</span>
               </li>
               <li><span class="li-required">cli_system_log_fospolicystats</span> - available versions:
+              <span class="li-normal">>= 7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_log_interfacestats</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_ioc</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_maildomain</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_pcapfile</span> - available versions:
+              <span class="li-normal">>= 7.4.1</span>
               </li>
               <li><span class="li-required">cli_system_log_ratelimit</span> - available versions:
+              <span class="li-normal">>= 6.4.8</span>
               </li>
               <li><span class="li-required">cli_system_log_ratelimit_device</span> - available versions:
+              <span class="li-normal">6.4.8-7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_log_ratelimit_ratelimits</span> - available versions:
+              <span class="li-normal">>= 7.0.3</span>
               </li>
               <li><span class="li-required">cli_system_log_settings</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_settings_rollinganalyzer</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_settings_rollinglocal</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_settings_rollingregular</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_topology</span> - available versions:
+              <span class="li-normal">6.4.7-6.4.14, >= 7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_logfetch_clientprofile</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logfetch_clientprofile_devicefilter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logfetch_clientprofile_logfilter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logfetch_serversettings</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logforward</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logforward_devicefilter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logforward_logfieldexclusion</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logforward_logfilter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_logforward_logmaskingcustom</span> - available versions:
+              <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">cli_system_logforwardservice</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_mail</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_metadata_admins</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_ntp</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_ntp_ntpserver</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_passwordpolicy</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_performance</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_report_autocache</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_report_estbrowsetime</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_report_group</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_report_group_chartalternative</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_report_group_groupby</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_report_setting</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_route</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_route6</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_saml</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_saml_fabricidp</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.1, >= 6.4.1</span>
               </li>
               <li><span class="li-required">cli_system_saml_serviceproviders</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_sniffer</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_snmp_community</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_snmp_community_hosts</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_snmp_community_hosts6</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_snmp_sysinfo</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_snmp_user</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_socfabric</span> - available versions:
+              <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">cli_system_socfabric_trustedlist</span> - available versions:
+              <span class="li-normal">>= 7.4.0</span>
               </li>
               <li><span class="li-required">cli_system_sql</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_sql_customindex</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_sql_customskipidx</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.1, >= 6.2.3</span>
               </li>
               <li><span class="li-required">cli_system_sql_tsindexfield</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_sslciphersuites</span> - available versions:
+              <span class="li-normal">6.4.8-6.4.14, >= 7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_status</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_syslog</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_webproxy</span> - available versions:
+              <span class="li-normal">6.4.8-6.4.14, >= 7.0.3</span>
               </li>
               <li><span class="li-required">cli_system_workflow_approvalmatrix</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_workflow_approvalmatrix_approver</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2</span>
               </li>
               <li><span class="li-required">dvmdb_adom</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">dvmdb_device</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">dvmdb_device_haslave</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">dvmdb_device_vdom</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">dvmdb_folder</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">dvmdb_group</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_alertfilter</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_alertlogs</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_alertlogs_count</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_alerts</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_alerts_count</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_alerts_export</span> - available versions:
+              <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">eventmgmt_alerts_extradetails</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.1, >= 6.4.1</span>
               </li>
               <li><span class="li-required">eventmgmt_basichandlers_export</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
               </li>
               <li><span class="li-required">eventmgmt_correlationhandlers_export</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
               </li>
               <li><span class="li-required">fazsys_enduseravatar</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">fazsys_forticare_licinfo</span> - available versions:
+              <span class="li-normal">>= 7.2.1</span>
               </li>
               <li><span class="li-required">fazsys_language_fonts_export</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">fazsys_language_fonts_list</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">fazsys_language_translationfile_export</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">fazsys_language_translationfile_list</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">fazsys_monitor_logforwardstatus</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
               </li>
               <li><span class="li-required">fortiview_run</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">incidentmgmt_attachments</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">incidentmgmt_attachments_count</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">incidentmgmt_epeuhistory</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">incidentmgmt_incidents</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">incidentmgmt_incidents_count</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ioc_license_state</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ioc_rescan_history</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ioc_rescan_run</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">logview_logfields</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">logview_logfiles_data</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">logview_logfiles_search</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">logview_logfiles_state</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">logview_logsearch</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">logview_logsearch_count</span> - available versions:
+              <span class="li-normal">>= 7.0.1</span>
               </li>
               <li><span class="li-required">logview_logstats</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.1, >= 6.4.1</span>
               </li>
               <li><span class="li-required">logview_pcapfile</span> - available versions:
+              <span class="li-normal">>= 7.0.3</span>
               </li>
               <li><span class="li-required">report_adom_root_template_language</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_graphfile</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
               </li>
               <li><span class="li-required">report_graphfile_data</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
               </li>
               <li><span class="li-required">report_graphfile_list</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
               </li>
               <li><span class="li-required">report_reports_data</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_reports_state</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_run</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_template_export</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">report_template_list</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">soar_config_connectors</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">soar_config_playbooks</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">soar_fosconnector_automationrules</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">soar_playbook_export</span> - available versions:
+              <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_playbook_monitor</span> - available versions:
+              <span class="li-normal">6.4.2-7.2.1</span>
               </li>
               <li><span class="li-required">soar_playbook_run</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">soar_subnet_export</span> - available versions:
+              <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_task_monitor</span> - available versions:
+              <span class="li-normal">>= 6.4.2</span>
               </li>
               <li><span class="li-required">sys_ha_status</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">sys_status</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">task_task</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">task_task_history</span> - available versions:
+              <span class="li-normal">6.2.2-6.2.12</span>
               </li>
               <li><span class="li-required">task_task_line</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">task_task_line_history</span> - available versions:
+              <span class="li-normal">6.2.1-6.2.1, >= 6.4.1</span>
               </li>
               <li><span class="li-required">ueba_endpoints</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ueba_endpoints_stats</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ueba_endpoints_vuln</span> - available versions:
+              <span class="li-normal">>= 7.4.1</span>
               </li>
               <li><span class="li-required">ueba_endusers</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ueba_endusers_stats</span> - available versions:
+              <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">ueba_otview</span> - available versions:
+              <span class="li-normal">>= 7.4.0</span>
               </li>
           </ul>
         </div>
@@ -625,6 +855,16 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-normal">datamask-custom-fields</span></li>
                 <li><span class="li-normal">profile</span></li>
+            </ul>
+            <li><span class="li-normal">params for cli_system_admin_profile_writepasswdprofiles:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">profile</span></li>
+                <li><span class="li-normal">write-passwd-profiles</span></li>
+            </ul>
+            <li><span class="li-normal">params for cli_system_admin_profile_writepasswduserlist:</span></li>
+            <ul class="ul-self">
+                <li><span class="li-normal">profile</span></li>
+                <li><span class="li-normal">write-passwd-user-list</span></li>
             </ul>
             <li><span class="li-normal">params for cli_system_admin_radius:</span></li>
             <ul class="ul-self">
@@ -1374,19 +1614,13 @@ Parameters
 
 
 
-
-
-
 Notes
 -----
 .. note::
 
    - Selector is a mandatory parameter for the module, and the params is varying depending on the selector.
-
    - Parameter ``adom`` can be ``null`` or ``''`` for all administrative domains,  ``global`` for global domain and any other custom domain strings. and a particular fact may not support all kinds of domains.
-
    - In parameters section, ``null`` and ``''`` are identical if you are fetching all objects under that selector category.
-
    - Normally, running one module can fail when a non-zero rc is returned. you can also override the conditions to fail or succeed with parameters ``rc_failed`` and ``rc_succeeded``
 
 Examples
@@ -1394,20 +1628,17 @@ Examples
 
 .. code-block:: yaml+jinja
 
-  - name: gathering fortianalyzer facts
+  - name: Gathering fortianalyzer facts
     hosts: fortianalyzers
-    gather_facts: no
+    gather_facts: false
     connection: httpapi
-    collections:
-      - fortinet.fortianalyzer
     vars:
-      ansible_httpapi_use_ssl: True
-      ansible_httpapi_validate_certs: False
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
       ansible_httpapi_port: 443
     tasks:
-      - name: fetch adom
-        faz_fact:
-          enable_log: true
+      - name: Fetch adom
+        fortinet.fortianalyzer.faz_fact:
           facts:
             selector: "dvmdb_adom"
             filter:

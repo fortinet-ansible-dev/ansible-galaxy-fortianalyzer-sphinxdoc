@@ -182,3 +182,32 @@ Bugfixes
   the same.
 - Require ansible core to be at least 2.14.0
 - Support FortiAnalyzer 7.0.10
+
+
+Release Galaxy 1.4.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Added deprecated warning to invalid argument name, please change the invalid argument name such as "var-name", "var name" to "var_name".
+- Changed minimum required ansible-core version to 2.15.0
+- Supported FortiAnalyzer 6.4.14, 7.0.11, 7.4.2
+
+Bugfixes
+--------
+
+- Changed "revision" to "v_range" to reduce the size of the code.
+- Improved the logic of plugin code.
+- Renamed the input argument "message" in "faz_sys_reboot" to "faz_message".
+
+New Modules
+-----------
+
+- fortinet.fortianalyzer.faz_cli_system_admin_profile_writepasswdprofiles - Profile list.
+- fortinet.fortianalyzer.faz_cli_system_admin_profile_writepasswduserlist - User list.
