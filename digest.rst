@@ -243,35 +243,35 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_admin_ldap_adom.html">faz_cli_system_admin_ldap_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">ldap</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom-name</span></code></td>
   <td>/cli/global/system/admin/ldap/{ldap}/adom<br>/cli/global/system/admin/ldap/{ldap}/adom/{adom}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile.html">faz_cli_system_admin_profile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">profileid</span></code></td>
   <td>/cli/global/system/admin/profile<br>/cli/global/system/admin/profile/{profile}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_datamaskcustomfields.html">faz_cli_system_admin_profile_datamaskcustomfields</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">field-name</span></code></td>
   <td>/cli/global/system/admin/profile/{profile}/datamask-custom-fields<br>/cli/global/system/admin/profile/{profile}/datamask-custom-fields/{datamask-custom-fields}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_writepasswdprofiles.html">faz_cli_system_admin_profile_writepasswdprofiles</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">profileid</span></code></td>
   <td>/cli/global/system/admin/profile/{profile}/write-passwd-profiles<br>/cli/global/system/admin/profile/{profile}/write-passwd-profiles/{write-passwd-profiles}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_writepasswduserlist.html">faz_cli_system_admin_profile_writepasswduserlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">userid</span></code></td>
   <td>/cli/global/system/admin/profile/{profile}/write-passwd-user-list<br>/cli/global/system/admin/profile/{profile}/write-passwd-user-list/{write-passwd-user-list}</td>
   </tr>
   <tr class="row-odd">
@@ -488,7 +488,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_csf_fabricconnector.html">faz_cli_system_csf_fabricconnector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">serial</span></code></td>
   <td>/cli/global/system/csf/fabric-connector<br>/cli/global/system/csf/fabric-connector/{fabric-connector}</td>
   </tr>
   <tr class="row-even">
@@ -593,7 +593,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_interface_member.html">faz_cli_system_interface_member</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">interface-name</span></code></td>
   <td>/cli/global/system/interface/{interface}/member<br>/cli/global/system/interface/{interface}/member/{member}</td>
   </tr>
   <tr class="row-odd">
@@ -964,14 +964,14 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_report_group_chartalternative.html">faz_cli_system_report_group_chartalternative</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">chart-name</span></code></td>
   <td>/cli/global/system/report/group/{group}/chart-alternative<br>/cli/global/system/report/group/{group}/chart-alternative/{chart-alternative}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_report_group_groupby.html">faz_cli_system_report_group_groupby</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">var-name</span></code></td>
   <td>/cli/global/system/report/group/{group}/group-by<br>/cli/global/system/report/group/{group}/group-by/{group-by}</td>
   </tr>
   <tr class="row-odd">
@@ -1104,7 +1104,7 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_cli_system_sslciphersuites.html">faz_cli_system_sslciphersuites</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
-  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">priority</span></code></td>
   <td>/cli/global/system/global/ssl-cipher-suites<br>/cli/global/system/global/ssl-cipher-suites/{ssl-cipher-suites}</td>
   </tr>
   <tr class="row-even">
@@ -1234,62 +1234,265 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td></td>
   </tr>
   <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_chart.html">faz_report_config_chart</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/report/adom/{adom}/config/chart<br>/report/adom/{adom}/config/chart/{chart}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_chart_drilldowntable.html">faz_report_config_chart_drilldowntable</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">chart_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">table_id</span></code></td>
+  <td>/report/adom/{adom}/config/chart/{chart_name}/drill-down-table<br>/report/adom/{adom}/config/chart/{chart_name}/drill-down-table/{drill-down-table}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_chart_tablecolumns.html">faz_report_config_chart_tablecolumns</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">chart_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/report/adom/{adom}/config/chart/{chart_name}/table-columns<br>/report/adom/{adom}/config/chart/{chart_name}/table-columns/{table-columns}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_chart_variabletemplate.html">faz_report_config_chart_variabletemplate</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">chart_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">var</span></code></td>
+  <td>/report/adom/{adom}/config/chart/{chart_name}/variable-template<br>/report/adom/{adom}/config/chart/{chart_name}/variable-template/{variable-template}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_dataset.html">faz_report_config_dataset</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/report/adom/{adom}/config/dataset<br>/report/adom/{adom}/config/dataset/{dataset}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_dataset_variable.html">faz_report_config_dataset_variable</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">dataset_name</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/config/dataset/{dataset_name}/variable<br>/report/adom/{adom}/config/dataset/{dataset_name}/variable/{variable}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_layout.html">faz_report_config_layout</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">layout_id</span></code></td>
+  <td>/report/adom/{adom}/config/layout<br>/report/adom/{adom}/config/layout/{layout}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_layout_component.html">faz_report_config_layout_component</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">component_id</span></code></td>
+  <td>/report/adom/{adom}/config/layout/{layout-id}/component<br>/report/adom/{adom}/config/layout/{layout-id}/component/{component}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_layout_component_variable.html">faz_report_config_layout_component_variable</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">component-id</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">var</span></code></td>
+  <td>/report/adom/{adom}/config/layout/{layout-id}/component/{component-id}/variable<br>/report/adom/{adom}/config/layout/{layout-id}/component/{component-id}/variable/{variable}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_layout_footer.html">faz_report_config_layout_footer</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">footer_id</span></code></td>
+  <td>/report/adom/{adom}/config/layout/{layout-id}/footer<br>/report/adom/{adom}/config/layout/{layout-id}/footer/{footer}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_layout_header.html">faz_report_config_layout_header</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">layout-id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">header_id</span></code></td>
+  <td>/report/adom/{adom}/config/layout/{layout-id}/header<br>/report/adom/{adom}/config/layout/{layout-id}/header/{header}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_layoutfolder.html">faz_report_config_layoutfolder</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">folder_id</span></code></td>
+  <td>/report/adom/{adom}/config/layout-folder<br>/report/adom/{adom}/config/layout-folder/{layout-folder}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_macro.html">faz_report_config_macro</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/report/adom/{adom}/config/macro<br>/report/adom/{adom}/config/macro/{macro}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_output.html">faz_report_config_output</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/report/adom/{adom}/config/output<br>/report/adom/{adom}/config/output/{output}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_output_emailrecipients.html">faz_report_config_output_emailrecipients</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">output-name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">address</span></code></td>
+  <td>/report/adom/{adom}/config/output/{output-name}/email-recipients<br>/report/adom/{adom}/config/output/{output-name}/email-recipients/{email-recipients}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_schedule.html">faz_report_config_schedule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/report/adom/{adom}/config/schedule<br>/report/adom/{adom}/config/schedule/{schedule}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_schedule_addressfilter.html">faz_report_config_schedule_addressfilter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">schedule_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/report/adom/{adom}/config/schedule/{schedule_name}/address-filter<br>/report/adom/{adom}/config/schedule/{schedule_name}/address-filter/{address-filter}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_schedule_devices.html">faz_report_config_schedule_devices</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">schedule_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">devices_name</span></code></td>
+  <td>/report/adom/{adom}/config/schedule/{schedule_name}/devices<br>/report/adom/{adom}/config/schedule/{schedule_name}/devices/{devices}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_config_schedule_filter.html">faz_report_config_schedule_filter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">schedule_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/report/adom/{adom}/config/schedule/{schedule_name}/filter<br>/report/adom/{adom}/config/schedule/{schedule_name}/filter/{filter}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_config_schedule_reportlayout.html">faz_report_config_schedule_reportlayout</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">schedule_name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">layout_id</span></code></td>
+  <td>/report/adom/{adom}/config/schedule/{schedule_name}/report-layout<br>/report/adom/{adom}/config/schedule/{schedule_name}/report-layout/{report-layout}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_configfile_import.html">faz_report_configfile_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/config-file/import</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_graphfile.html">faz_report_graphfile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">delete</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/graph-file</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_graphfile_delete.html">faz_report_graphfile_delete</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">delete</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/graph-file</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_reports_data_delete.html">faz_report_reports_data_delete</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">tid</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/reports/data/{tid}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_run.html">faz_report_run</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/run</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_run_delete.html">faz_report_run_delete</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">delete</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">tid</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/run/{tid}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_template_delete.html">faz_report_template_delete</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td>None</td>
+  <td>None</td>
+  <td>/report/template/delete</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_report_template_import.html">faz_report_template_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td>None</td>
+  <td>None</td>
+  <td>/report/template/import</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_report_template_install.html">faz_report_template_install</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/report/adom/{adom}/template/install</td>
+  </tr>
+  <tr class="row-odd">
   <td><a class="reference external" href="daemon_docgen/faz_sys_api_sdnconnector.html">faz_sys_api_sdnconnector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/api/sdnconnector</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="daemon_docgen/faz_sys_generate_wsdl.html">faz_sys_generate_wsdl</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/generate/wsdl</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="daemon_docgen/faz_sys_login_challenge.html">faz_sys_login_challenge</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/login/challenge</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="daemon_docgen/faz_sys_login_user.html">faz_sys_login_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/login/user</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="daemon_docgen/faz_sys_logout.html">faz_sys_logout</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/logout</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="daemon_docgen/faz_sys_proxy_json.html">faz_sys_proxy_json</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/proxy/json</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="daemon_docgen/faz_sys_reboot.html">faz_sys_reboot</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/sys/reboot</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="daemon_docgen/faz_um_image_upgrade.html">faz_um_image_upgrade</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/um/image/upgrade</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="daemon_docgen/faz_um_image_upgrade_ext.html">faz_um_image_upgrade_ext</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">exec</span></code></td>
   <td>None</td>

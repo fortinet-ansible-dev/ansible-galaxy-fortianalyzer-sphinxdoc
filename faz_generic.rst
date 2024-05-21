@@ -26,7 +26,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.9.0
+- ansible>=2.15.0
 
 
 
@@ -36,15 +36,16 @@ Parameters
 .. raw:: html
 
   <ul>
-  <li><span class="li-head">access_token</span> -The token to access FortiAnalyzer without using ansible_username and ansible_password. <span class="li-normal">type: str</span> <span class="li-required">required: false</span></li>
-  <li><span class="li-head">enable_log</span> - Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
-  <li><span class="li-head">forticloud_access_token</span> - Access token of forticloud analyzer API users. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
-  <li><span class="li-head">log_path</span> - The path to save log. Used if enable_log is true. Please use absolute path instead of relative path. If the log_path setting is incorrect, the log will be saved in /tmp/fortianalyzer.ansible.log<span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> default: "/tmp/fortianalyzer.ansible.log"</span> </li>
-  <li><span class="li-head">rc_succeeded</span> - The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
-  <li><span class="li-head">rc_failed</span> - The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
-  <li><span class="li-head">method</span> - The method of API request, grouped with parameter params. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal">choices: [add, set, update, get, delete, exec, move, clone]</span>  </li>
-  <li><span class="li-head">params</span> - The parameter body of API request, grouped with parameter method. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
-  <li><span class="li-head">json</span> - The raw json formatted string, it must contain method and params.<span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">access_token</span> The token to access FortiAnalyzer without using ansible_username and ansible_password. <span class="li-normal">type: str</span> <span class="li-required">required: false</span></li>
+  <li><span class="li-head">enable_log</span> Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-required">required: false</span> <span class="li-normal"> default: False</span> </li>
+  <li><span class="li-head">forticloud_access_token</span> Access token of forticloud analyzer API users. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">log_path</span> The path to save log. Used if enable_log is true. Please use absolute path instead of relative path. If the log_path setting is incorrect, the log will be saved in /tmp/fortianalyzer.ansible.log<span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal"> default: "/tmp/fortianalyzer.ansible.log"</span> </li>
+  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">method</span> The method of API request, grouped with parameter params. <span class="li-normal">type: str</span> <span class="li-required">required: false</span> <span class="li-normal">choices: [add, set, update, get, delete, exec, move, clone]</span>  </li>
+  <li><span class="li-head">params</span> The parameter body of API request, grouped with parameter method. <span class="li-normal">type: list</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">json</span> The raw json formatted string, it must contain method and params.<span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
+  <li><span class="li-head">jsonrpc</span> Some APIs may require jsonrpc set as 2.0 (such as fortiview, report, etc.)<span class="li-normal">type: str</span> <span class="li-required">required: false</span> </li>
   </ul>
 
 
@@ -130,16 +131,16 @@ Common return values are documented: https://docs.ansible.com/ansible/latest/ref
 .. raw:: html
 
   <ul>
-    <li><span class="li-return">meta</span> - The result of the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
+    <li><span class="li-return">meta</span> The result of the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
     <ul class="ul-self">
-      <li><span class="li-return">request_url</span> - The full url requested. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
-      <li><span class="li-return">response_code</span> - The status of api request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
-      <li><span class="li-return">response_data</span> - The data body of the api response. <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
-      <li><span class="li-return">response_message</span> - The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
-      <li><span class="li-return">system_information</span> - The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
+      <li><span class="li-return">request_url</span> The full url requested. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: /sys/login/user</span></li>
+      <li><span class="li-return">response_code</span> The status of api request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+      <li><span class="li-return">response_data</span> The data body of the api response. <span class="li-normal">returned: optional</span> <span class="li-normal">type: list or dict</span></li>
+      <li><span class="li-return">response_message</span> The descriptive message of the api response. <span class="li-normal">returned: always</span> <span class="li-normal">type: str</span> <span class="li-normal">sample: OK</span></li>
+      <li><span class="li-return">system_information</span> The information of the target system. <span class="li-normal">returned: always</span> <span class="li-normal">type: dict</span></li>
     </ul>
-    <li><span class="li-return">rc</span> - The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
-    <li><span class="li-return">version_check_warning</span> - Warning if the parameters used in the playbook are not supported by the current fortianalyzer version. <span class="li-normal">returned: if params are not supported in the current version</span> <span class="li-normal">type: list</span></li>
+    <li><span class="li-return">rc</span> The status the request. <span class="li-normal">returned: always</span> <span class="li-normal">type: int</span> <span class="li-normal">sample: 0</span></li>
+    <li><span class="li-return">version_check_warning</span> Warning if the parameters used in the playbook are not supported by the current fortianalyzer version. <span class="li-normal">returned: if params are not supported in the current version</span> <span class="li-normal">type: list</span></li>
   </ul>
 
 
@@ -153,15 +154,9 @@ Status
 Authors
 -------
 
+- Xinwei Du (@dux-fortinet)
+- Maxx Liu (@MaxxLiu22)
 - Link Zheng (@chillancezen)
 - Jie Xue (@JieX19)
 - Frank Shen (@fshen01)
 - Hongbin Lu (@fgtdev-hblu)
-
-
-.. hint::
-
-    If you notice any issues in this documentation, you can create a pull request to improve it.
-
-
-
