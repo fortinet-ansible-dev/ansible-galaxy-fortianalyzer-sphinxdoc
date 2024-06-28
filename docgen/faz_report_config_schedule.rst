@@ -67,7 +67,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">description</span> <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">devices</span> reference: /report/adom/&lt;adom-name&gt;/config/schedule/&lt;schedule_name&gt;/devices <span class="li-normal">type: list of dict</span>
@@ -131,7 +131,7 @@ Parameters
  </li>
  <li><span class="li-head">name</span> <span class="li-normal">type: str</span>  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">report_layout</span> reference: /report/adom/&lt;adom-name&gt;/config/schedule/&lt;schedule_name&gt;/report-layout <span class="li-normal">type: list of dict</span>
@@ -142,7 +142,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">layout_id</span> <span class="li-normal">type: int</span>  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">is_global</span> <span class="li-normal">type: int</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
@@ -154,17 +154,17 @@ Parameters
  </li>
  <li><span class="li-head">status</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">admin_user</span> <span class="li-normal">type: str</span>  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">auto_hcache</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span>  <span class="li-normal">default: disable</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">date_format</span> <span class="li-normal">type: str</span>  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
@@ -318,21 +318,15 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
  </div>
  </li>
- <li><span class="li-head">schedule_valid_end</span> [YYYY-MM-DD], [HH:MM:SS] <span class="li-normal">type: list of dict</span>
- <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">schedule_valid_end</span> [YYYY-MM-DD], [HH:MM:SS] <span class="li-normal">type: str</span>  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
  </div>
- <ul class="ul-self">
- </ul>
  </li>
- <li><span class="li-head">schedule_valid_start</span> [YYYY-MM-DD], [HH:MM:SS] <span class="li-normal">type: list of dict</span>
- <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">schedule_valid_start</span> [YYYY-MM-DD], [HH:MM:SS] <span class="li-normal">type: str</span>  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
  </div>
- <ul class="ul-self">
- </ul>
  </li>
  <li><span class="li-head">time_period</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [last-n-weeks, last-month, last-7-days, last-week, yesterday, this-month, this-week, last-30-days, last-quarter, last-2-weeks, this-quarter, last-n-days, last-14-days, this-year, other, today, last-n-hours]</span>  <span class="li-normal">default: </span>  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
@@ -352,24 +346,29 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">include_option</span> <span class="li-normal">type: str</span>  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.4.2</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">address_type</span> <span class="li-normal">type: str</span>  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
+ <div id="label109" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">soc_cust_filters</span> reference: /sql-report/schedule/soc-cust-filters <span class="li-normal">type: list of dict</span>
- <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
- <div id="label109" style="display:none">
+ <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
+ <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">name</span> <span class="li-normal">type: str</span>  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
- <div id="label111" style="display:none">
+ <li><span class="li-head">name</span> <span class="li-normal">type: str</span>  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
+ <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.7 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.1 -> latest</code></p>
  </div>
  </li>
@@ -395,9 +394,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Config schedule.
         fortinet.fortianalyzer.faz_report_config_schedule:
@@ -409,22 +409,18 @@ Examples
           report_config_schedule:
             description: <value of string>
             devices:
-              -
-                devices_name: <value of string>
+              - devices_name: <value of string>
                 interfaces:
-                  -
-                    name: <value of string>
+                  - name: <value of string>
             filter:
-              -
-                description: <value of string>
+              - description: <value of string>
                 name: <value of string>
                 opcode: <value in [not_equal, equal]>
                 status: <value of integer>
                 value: <value of string>
             name: <value of string>
             report_layout:
-              -
-                layout_id: <value of integer>
+              - layout_id: <value of integer>
                 is_global: <value of integer>
             status: <value in [enable, disable]>
             admin_user: <value of string>
@@ -458,17 +454,16 @@ Examples
             schedule_color: <value of string>
             schedule_frequency: <value of integer>
             schedule_type: <value in [every-n-days, every-n-months, every-n-hours, ...]>
-            schedule_valid_end: <value of dict>
-            schedule_valid_start: <value of dict>
+            schedule_valid_end: <value of string>
+            schedule_valid_start: <value of string>
             time_period: <value in [last-n-weeks, last-month, last-7-days, ...]>
             week_start: <value in [wed, sun, fri, ...]>
             address_filter:
-              -
-                id: <value of integer>
+              - id: <value of integer>
                 include_option: <value of string>
+                address_type: <value of string>
             soc_cust_filters:
-              -
-                name: <value of string>
+              - name: <value of string>
   
 
 

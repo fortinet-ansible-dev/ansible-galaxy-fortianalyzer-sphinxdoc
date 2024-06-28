@@ -1,6 +1,33 @@
 Release Notes
 ==============================
 
+Release Galaxy 1.6.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Supported FortiAnalyzer 7.4.3 API schemas. 1 new module.
+- Supported ansible-core 2.17
+
+Bugfixes
+--------
+
+- Added more report selectors in faz_fact.
+- Changed type of "schedule_valid_end" and "schedule_valid_start" in module faz_report_config_schedule from list of dict to string.
+
+New Modules
+-----------
+
+- fortinet.fortianalyzer.faz_cli_system_log_ueba - UEBAsettings.
+
+
+
 Release Galaxy 1.5.0
 ~~~~~~~~~~~~~~~~~~~~~~
 

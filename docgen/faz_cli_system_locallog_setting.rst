@@ -120,6 +120,7 @@ Examples
             log_interval_disk_full: 5
             log_interval_gbday_exceeded: 1440
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

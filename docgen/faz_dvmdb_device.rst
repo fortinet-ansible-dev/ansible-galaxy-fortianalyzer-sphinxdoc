@@ -563,6 +563,11 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">relver_info</span> <span class="li-normal">type: str</span>  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -590,6 +595,7 @@ Examples
           dvmdb_device:
             desc: device modified via module fortinet.fortianalyzer.faz_dvmdb_device
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

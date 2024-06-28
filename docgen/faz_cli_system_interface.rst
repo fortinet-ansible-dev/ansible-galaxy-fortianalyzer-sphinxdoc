@@ -117,7 +117,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">speed</span> Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1g/full, 2.5g/full, 5g/full, 10g/full, 14g/full, 20g/full, 25g/full, 40g/full, 50g/full, 56g/full, 100g/full, 1g/half]</span>  <span class="li-normal">default: auto</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">speed</span> Speed. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1g/full, 2.5g/full, 5g/full, 10g/full, 14g/full, 20g/full, 25g/full, 40g/full, 50g/full, 56g/full, 100g/full, 1g/half, 200g/full, 400g/full]</span>  <span class="li-normal">default: auto</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
@@ -254,6 +254,7 @@ Examples
           interface: fooaggregate
           state: present
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -282,6 +283,7 @@ Examples
             # type: physical
           state: present
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

@@ -1,3 +1,3 @@
 # ansible-galaxy-fortianalyzer-sphinxdoc
 
-Read the docs online: https://ansible-galaxy-fortianalyzer-docs.readthedocs.io/en/1.5.0/
+Read the docs online: https://ansible-galaxy-fortianalyzer-docs.readthedocs.io/en/1.6.0/

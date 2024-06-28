@@ -212,6 +212,7 @@ Examples
             report_auto_deletion:
               status: disable
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

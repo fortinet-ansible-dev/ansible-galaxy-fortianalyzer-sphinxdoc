@@ -68,7 +68,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">layout_id</span> <span class="li-normal">type: int</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">is_global</span> <span class="li-normal">type: int</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
@@ -96,9 +96,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Config report-layout.
         fortinet.fortianalyzer.faz_report_config_schedule_reportlayout:

@@ -72,17 +72,17 @@ Parameters
  </li>
  <li><span class="li-head">description</span> <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">dev_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [FortiSandbox, FortiWeb, Fabric, Syslog, FortiCache, FortiAuthenticator, FortiMail, FortiProxy, FortiManager, FortiNAC, FortiAnalyzer, FortiClient, FortiDDoS, FortiGate, FortiFirewall]</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">disp_name</span> <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">drill_down_table</span> reference: /report/adom/&lt;adom-name&gt;/config/chart/&lt;chart_name&gt;/drill-down-table <span class="li-normal">type: list of dict</span>
@@ -103,12 +103,12 @@ Parameters
  </li>
  <li><span class="li-head">table_id</span> <span class="li-normal">type: int</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">chart_group</span> <span class="li-normal">type: str</span>  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">page_break_after</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span>  <span class="li-normal">default: disable</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
@@ -125,7 +125,7 @@ Parameters
  </li>
  <li><span class="li-head">name</span> <span class="li-normal">type: str</span>  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">table_columns</span> reference: /report/adom/&lt;adom-name&gt;/config/chart/&lt;chart_name&gt;/table-columns <span class="li-normal">type: list of dict</span>
@@ -136,22 +136,22 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">data_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aggregate, raw, drilldown]</span>  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">header</span> <span class="li-normal">type: str</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">column_attr</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [app-id, email-recver, timespan, obf-url, cal-percent, vuln, bandwidth, dev-type, severity, percent, trend, attack, html, ipsec-tunnel, web-cat, ip-country, email-sender, search, virus, user, state-icon, count, none, dst-country, url, appcat, time, kbps]</span>  <span class="li-normal">default: none</span>  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">column_graph_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, bar, line-down, line-up]</span>  <span class="li-normal">default: none</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
@@ -199,27 +199,27 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">not</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span>  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">var</span> <span class="li-normal">type: str</span>  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">var_value</span> <span class="li-normal">type: str</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">description</span> <span class="li-normal">type: str</span>  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">drilldown_flag</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span>  <span class="li-normal">default: disable</span>  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable]</span>  <span class="li-normal">default: disable</span>  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
@@ -246,7 +246,7 @@ Parameters
  </li>
  <li><span class="li-head">chart_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [map, none, chord, bar, area, pie, donut, radar, table, line]</span>  <span class="li-normal">default: none</span>  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dataset</span> <span class="li-normal">type: str</span>  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
@@ -381,7 +381,12 @@ Parameters
  </li>
  <li><span class="li-head">tags</span> <span class="li-normal">type: str</span>  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.4.2</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">chart_style</span> <span class="li-normal">type: str</span>  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
+ <div id="label125" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -404,9 +409,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Config chart.
         fortinet.fortianalyzer.faz_report_config_chart:
@@ -421,8 +427,7 @@ Examples
             dev_type: <value in [FortiSandbox, FortiWeb, Fabric, ...]>
             disp_name: <value of string>
             drill_down_table:
-              -
-                chart: <value of string>
+              - chart: <value of string>
                 flag: <value in [enable, disable]>
                 table_id: <value of integer>
                 chart_group: <value of string>
@@ -430,8 +435,7 @@ Examples
                 show_title: <value in [enable, disable]>
             name: <value of string>
             table_columns:
-              -
-                data_type: <value in [aggregate, raw, drilldown]>
+              - data_type: <value in [aggregate, raw, drilldown]>
                 header: <value of string>
                 id: <value of integer>
                 column_attr: <value in [app-id, email-recver, timespan, ...]>
@@ -443,8 +447,7 @@ Examples
                 data_top: <value of integer>
                 legend: <value of string>
             variable_template:
-              -
-                not: <value in [enable, disable]>
+              - not: <value in [enable, disable]>
                 var: <value of string>
                 var_value: <value of string>
                 description: <value of string>
@@ -481,6 +484,7 @@ Examples
             y2_axis_data_binding: <value of string>
             y2_axis_label: <value of string>
             tags: <value of string>
+            chart_style: <value of string>
   
 
 

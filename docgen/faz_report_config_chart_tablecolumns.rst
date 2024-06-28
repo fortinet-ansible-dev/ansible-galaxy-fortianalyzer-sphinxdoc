@@ -68,22 +68,22 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">data_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [aggregate, raw, drilldown]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">header</span> <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">column_attr</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [app-id, email-recver, timespan, obf-url, cal-percent, vuln, bandwidth, dev-type, severity, percent, trend, attack, html, ipsec-tunnel, web-cat, ip-country, email-sender, search, virus, user, state-icon, count, none, dst-country, url, appcat, time, kbps]</span>  <span class="li-normal">default: none</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">column_graph_type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, bar, line-down, line-up]</span>  <span class="li-normal">default: none</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
@@ -141,9 +141,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Config table-columns.
         fortinet.fortianalyzer.faz_report_config_chart_tablecolumns:

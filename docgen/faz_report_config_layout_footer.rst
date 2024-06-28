@@ -78,12 +78,12 @@ Parameters
  </li>
  <li><span class="li-head">graphic</span> <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">text</span> <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.2 -> v6.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -106,9 +106,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Config footer.
         fortinet.fortianalyzer.faz_report_config_layout_footer:

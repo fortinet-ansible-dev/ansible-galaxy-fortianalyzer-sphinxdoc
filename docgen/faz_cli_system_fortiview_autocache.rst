@@ -80,7 +80,7 @@ Parameters
  </li>
  <li><span class="li-head">incr_fortiview</span> Enable/disable fortiview incremental cache. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.5 -> v7.2.5</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -109,6 +109,7 @@ Examples
             aggressive_fortiview: disable
             status: disable
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

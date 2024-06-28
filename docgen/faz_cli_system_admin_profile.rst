@@ -149,7 +149,7 @@ Parameters
  </li>
  <li><span class="li-head">device_forticlient</span> Manage FortiClient. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">device_fortiswitch</span> Manage FortiSwitch. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
@@ -199,7 +199,7 @@ Parameters
  </li>
  <li><span class="li-head">realtime_monitor</span> Realtime monitor. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.4.2</code></p>
  </div>
  </li>
  <li><span class="li-head">report_viewer</span> Report viewer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
@@ -442,6 +442,7 @@ Examples
             profileid: 1
           state: present
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

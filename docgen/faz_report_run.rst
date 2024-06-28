@@ -179,9 +179,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Start report requests.
         fortinet.fortianalyzer.faz_report_run:
@@ -195,8 +196,7 @@ Examples
               device: <value of string>
               display_table_contents: <value in [0, 1]>
               filter:
-                -
-                  name: <value of string>
+                - name: <value of string>
                   opcode: <value in [0, 1]>
                   value: <value of string>
               filter_logic: <value in [all, any]>

@@ -1,13 +1,13 @@
-:source: faz_cli_system_report_group_groupby.py
+:source: faz_cli_system_log_ueba.py
 
 :orphan:
 
-.. _faz_cli_system_report_group_groupby:
+.. _faz_cli_system_log_ueba:
 
-faz_cli_system_report_group_groupby -- Group-by variables.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_log_ueba -- UEBAsettings.
+++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.6.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -42,7 +42,7 @@ FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -61,23 +61,16 @@ Parameters
  <li><span class="li-head">version_check</span> If set to True, it will check whether the parameters used are supported by the corresponding version of FortiAnazlyer locally based on FNDN data. A warning will be returned in version_check_warning if there is a mismatch. This warning is only a suggestion and may not be accurate. <span class="li-normal">type: bool</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
- <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">group</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">cli_system_report_group_groupby</span> Group-by variables. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">cli_system_log_ueba</span> UEBAsettings. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">var_expression</span> Variable expression. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ip_only_ep</span> Disable/Enable IP-only endpoint identification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">var_name</span> Variable name. <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ip_unique_scope</span> set ip-unique-scope. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [adom, vdom]</span>  <span class="li-normal">default: vdom</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">var_type</span> Variable type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [integer, string, enum, ip]</span>  <span class="li-normal">default: string</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
- <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -97,22 +90,22 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
-    connection: httpapi
     hosts: fortianalyzers
-    tasks:
-      - name: Group-by variables.
-        fortinet.fortianalyzer.faz_cli_system_report_group_groupby:
-          cli_system_report_group_groupby:
-            var_expression: <value of string>
-            var_name: <value of string>
-            var_type: <value in [integer, string, enum, ...]>
-          group: <your own value>
-          state: present
+    connection: httpapi
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
+    tasks:
+      - name: UEBAsettings.
+        fortinet.fortianalyzer.faz_cli_system_log_ueba:
+          # bypass_validation: false
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
+          cli_system_log_ueba:
+            ip_only_ep: <value in [disable, enable]>
+            ip_unique_scope: <value in [adom, vdom]>
   
 
 

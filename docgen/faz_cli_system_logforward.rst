@@ -376,6 +376,11 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">fwd_syslog_transparent</span> Enable/disable transparently forwarding logs from syslog devices to syslog server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable, faz-enrich]</span>  <span class="li-normal">default: enable</span>  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
+ <div id="label121" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -415,6 +420,7 @@ Examples
             log_masking_status: enable
           state: present
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

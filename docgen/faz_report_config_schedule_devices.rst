@@ -104,9 +104,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Config devices.
         fortinet.fortianalyzer.faz_report_config_schedule_devices:
@@ -119,8 +120,7 @@ Examples
           report_config_schedule_devices:
             devices_name: <value of string>
             interfaces:
-              -
-                name: <value of string>
+              - name: <value of string>
   
 
 

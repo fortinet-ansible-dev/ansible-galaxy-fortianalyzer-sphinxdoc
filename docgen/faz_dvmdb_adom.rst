@@ -170,6 +170,56 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">primary_dns_ip4</span> <span class="li-normal">type: str</span>  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">primary_dns_ip6_1</span> <span class="li-normal">type: int</span>  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">primary_dns_ip6_2</span> <span class="li-normal">type: int</span>  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">primary_dns_ip6_3</span> <span class="li-normal">type: int</span>  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">primary_dns_ip6_4</span> <span class="li-normal">type: int</span>  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">secondary_dns_ip4</span> <span class="li-normal">type: str</span>  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">secondary_dns_ip6_1</span> <span class="li-normal">type: int</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">secondary_dns_ip6_2</span> <span class="li-normal">type: int</span>  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">secondary_dns_ip6_3</span> <span class="li-normal">type: int</span>  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">secondary_dns_ip6_4</span> <span class="li-normal">type: int</span>  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -197,6 +247,7 @@ Examples
             name: fooadom
           state: present
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false

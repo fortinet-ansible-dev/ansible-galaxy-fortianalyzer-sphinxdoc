@@ -120,9 +120,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Update the firmware of specific device.
         fortinet.fortianalyzer.faz_um_image_upgrade_ext:
@@ -132,8 +133,7 @@ Examples
           um_image_upgrade_ext:
             create_task: <value of string>
             device:
-              -
-                name: <value of string>
+              - name: <value of string>
                 vdom: <value of string>
             flags: <value in [f_boot_alt_partition, f_skip_retrieve, f_skip_multi_steps, ...]>
             image: <value of string>

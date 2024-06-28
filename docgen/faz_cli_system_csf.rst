@@ -254,9 +254,10 @@ Examples
     hosts: fortianalyzers
     connection: httpapi
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Add this device to a Security Fabric or set up a new Security Fabric on this device.
         fortinet.fortianalyzer.faz_cli_system_csf:
@@ -271,8 +272,7 @@ Examples
             downstream_access: <value in [disable, enable]>
             downstream_accprofile: <value of string>
             fabric_connector:
-              -
-                accprofile: <value of string>
+              - accprofile: <value of string>
                 configuration_write_access: <value in [disable, enable]>
                 serial: <value of string>
             fabric_object_unification: <value in [local, default]>
@@ -288,8 +288,7 @@ Examples
             saml_configuration_sync: <value in [local, default]>
             status: <value in [disable, enable]>
             trusted_list:
-              -
-                action: <value in [accept, deny]>
+              - action: <value in [accept, deny]>
                 authorization_type: <value in [serial, certificate]>
                 certificate: <value of string>
                 downstream_authorization: <value in [disable, enable]>

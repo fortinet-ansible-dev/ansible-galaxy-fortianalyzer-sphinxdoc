@@ -14,7 +14,7 @@ decrypt your secrets for the sake of confidentiality.
 Prepare host inventory
 ~~~~~~~~~~~~~~~~~~~~~~
 
-in our case we create a file named ``hosts``:
+In this case, create a file named ``hosts``:
 
 ::
 
@@ -24,6 +24,9 @@ in our case we create a file named ``hosts``:
 
    [fortianalyzers:vars]
    ansible_network_os=fortinet.fortianalyzer.fortianalyzer
+   ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   ansible_httpapi_validate_certs=false
 
 Write the playbook
 ~~~~~~~~~~~~~~~~~~
@@ -31,21 +34,21 @@ Write the playbook
 An Example
 ----------
 
-in the example: ``test.yml`` we are going to create a script on FortiAnalyzer:
+In the example: ``test.yml``, we are going to create a script on FortiAnalyzer:
 
 ::
 
    - hosts: fortianalyzers
      connection: httpapi
-     collections:
-     - fortinet.fortianalyzer
      vars:
-      ansible_httpapi_use_ssl: yes
-      ansible_httpapi_validate_certs: no
-      ansible_httpapi_port: 443
+       # You don't need to specify the following vars if you specified them in the host file.
+       # ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+       # ansible_httpapi_port: 443
+       # ansible_httpapi_use_ssl: true
+       # ansible_httpapi_validate_certs: false
      tasks:
        - name: Alert console
-         faz_cli_system_global:
+         fortinet.fortianalyzer.faz_cli_system_global:
             cli_system_global:
                 language: english
 
@@ -53,7 +56,7 @@ in the example: ``test.yml`` we are going to create a script on FortiAnalyzer:
 Parameter Usages
 ----------------
 
-there are several mandatory options in the example:
+There are several mandatory options in the example:
 
 -  **adom** : ``adom`` is the administrative domain that an API is going to run inside. In most cases, ``global`` or ``root`` is what you need.
 -  **state** : ``state`` is indicating the action the module is going to take. by giving ``present``, the module will create or update the object, while ``absent`` tells the module to delete the object in the FortiAnalyzer.

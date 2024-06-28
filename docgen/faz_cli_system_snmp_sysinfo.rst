@@ -141,6 +141,7 @@ Examples
             # trap_high_cpu_threshold: <value of integer>
             # trap_low_memory_threshold: <value of integer>
     vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
