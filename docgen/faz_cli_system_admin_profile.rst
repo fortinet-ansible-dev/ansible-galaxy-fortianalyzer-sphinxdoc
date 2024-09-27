@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode and diff mode.
 
 Requirements
 ------------
@@ -184,7 +184,7 @@ Parameters
  </li>
  <li><span class="li-head">fortirecorder_setting</span> FortiRecorder settings. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.7</code></p>
  </div>
  </li>
  <li><span class="li-head">log_viewer</span> Log viewer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
@@ -412,6 +412,11 @@ Parameters
  </div>
  </li>
  </ul>
+ </li>
+ <li><span class="li-head">adom_admin</span> Enable Adom Admin. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
+ <div id="label137" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
  </li>
  </ul>
  </ul>

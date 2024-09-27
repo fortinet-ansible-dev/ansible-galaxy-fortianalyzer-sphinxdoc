@@ -1,13 +1,13 @@
-:source: faz_cli_system_admin_user_policypackage.py
+:source: faz_cli_system_admin_user_policyblock.py
 
 :orphan:
 
-.. _faz_cli_system_admin_user_policypackage:
+.. _faz_cli_system_admin_user_policyblock:
 
-faz_cli_system_admin_user_policypackage -- Policy package access.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_admin_user_policyblock -- Policy block write access.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.7.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -42,7 +42,7 @@ FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
 
 
 
@@ -63,11 +63,11 @@ Parameters
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">user</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">cli_system_admin_user_policypackage</span> Policy package access. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">cli_system_admin_user_policyblock</span> Policy block write access. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">policy_package_name</span> Policy package names. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">policy_block_name</span> Policy block names. <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -87,26 +87,23 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
-    connection: httpapi
     hosts: fortianalyzers
-    tasks:
-      - name: Create policy package access.
-        fortinet.fortianalyzer.faz_cli_system_admin_user_policypackage:
-          cli_system_admin_user_policypackage:
-            policy_package_name: all_policy_packages
-          state: present
-          user: fooadminuser
-      - name: Delete policy package access.
-        fortinet.fortianalyzer.faz_cli_system_admin_user_policypackage:
-          state: absent
-          user: fooadminuser
-          cli_system_admin_user_policypackage:
-            policy_package_name: all_policy_packages
+    connection: httpapi
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
+    tasks:
+      - name: Policy block write access.
+        fortinet.fortianalyzer.faz_cli_system_admin_user_policyblock:
+          # bypass_validation: false
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
+          user: <your own value>
+          state: <value in [present, absent]>
+          cli_system_admin_user_policyblock:
+            policy_block_name: <value of string>
   
 
 

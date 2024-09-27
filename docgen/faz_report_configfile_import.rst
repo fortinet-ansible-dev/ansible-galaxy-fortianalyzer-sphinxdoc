@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode.
 
 Requirements
 ------------

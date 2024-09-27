@@ -40,6 +40,7 @@ Parameters
  <li><span class="li-head">enable_log</span> Enable/Disable logging for task <span class="li-normal">type: bool</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">forticloud_access_token</span> Access token of forticloud analyzer API users. <span class="li-normal">type: str</span> </li>
  <li><span class="li-head">log_path</span> The path to save log. Used if enable_log is true. Please use absolute path instead of relative path. If the log_path setting is incorrect, the log will be saved in /tmp/fortianalyzer.ansible.log<span class="li-normal">type: str</span> <span class="li-normal"> default: "/tmp/fortianalyzer.ansible.log"</span> </li>
+ <li><span class="li-head">version_check</span> If set to True, it will check whether the parameters used are supported by the corresponding version of FortiAnazlyer locally based on FNDN data. A warning will be returned in version_check_warning if there is a mismatch. This warning is only a suggestion and may not be accurate. <span class="li-normal">type: bool</span> <span class="li-normal"> default: True</span> </li>
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rename</span> Rename An Object. <span class="li-normal">type: dict</span></li>
@@ -171,6 +172,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>fieldname</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_admin_user_metadata.html#parameters">faz_cli_system_admin_user_metadata</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for cli_system_admin_user_policyblock:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>policy_block_name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_admin_user_policyblock.html#parameters">faz_cli_system_admin_user_policyblock</a> </span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_admin_user_policypackage:</span></li>
         <ul class="ul-self">
@@ -478,6 +485,12 @@ Parameters
             <li><span class="li-normal">required primary key: <b>adom-name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_workflow_approvalmatrix.html#parameters">faz_cli_system_workflow_approvalmatrix</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for cli_system_workflow_approvalmatrix_approver:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>seq_num</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_cli_system_workflow_approvalmatrix_approver.html#parameters">faz_cli_system_workflow_approvalmatrix_approver</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for dvmdb_adom:</span></li>
         <ul class="ul-self">
             
@@ -531,6 +544,12 @@ Parameters
             
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_dataset.html#parameters">faz_report_config_dataset</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_dataset_variable:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>var</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_report_config_dataset_variable.html#parameters">faz_report_config_dataset_variable</a> </span></li>
         </ul>
         <li><span class="li-normal">params for report_config_layout:</span></li>
         <ul class="ul-self">
@@ -688,6 +707,9 @@ Parameters
         <li><span class="li-required">cli_system_admin_user_metadata</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
+        <li><span class="li-required">cli_system_admin_user_policyblock</span> - available versions:
+            <span class="li-normal">>= 7.6.0</span>
+        </li>
         <li><span class="li-required">cli_system_admin_user_policypackage</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
@@ -839,7 +861,10 @@ Parameters
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">cli_system_workflow_approvalmatrix</span> - available versions:
-            <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2</span>
+            <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
+        </li>
+        <li><span class="li-required">cli_system_workflow_approvalmatrix_approver</span> - available versions:
+            <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
         </li>
         <li><span class="li-required">dvmdb_adom</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
@@ -866,6 +891,9 @@ Parameters
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">report_config_dataset</span> - available versions:
+            <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">report_config_dataset_variable</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">report_config_layout</span> - available versions:
@@ -1010,6 +1038,11 @@ Parameters
         <li><span class="li-normal">params for cli_system_admin_user_metadata:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">meta-data</span></li>
+            <li><span class="li-normal">user</span></li>
+        </ul>
+        <li><span class="li-normal">params for cli_system_admin_user_policyblock:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">policy-block</span></li>
             <li><span class="li-normal">user</span></li>
         </ul>
         <li><span class="li-normal">params for cli_system_admin_user_policypackage:</span></li>
@@ -1229,6 +1262,11 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">approval-matrix</span></li>
         </ul>
+        <li><span class="li-normal">params for cli_system_workflow_approvalmatrix_approver:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">approval-matrix</span></li>
+            <li><span class="li-normal">approver</span></li>
+        </ul>
         <li><span class="li-normal">params for dvmdb_adom:</span></li>
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
@@ -1276,6 +1314,12 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">dataset</span></li>
+        </ul>
+        <li><span class="li-normal">params for report_config_dataset_variable:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">dataset_name</span></li>
+            <li><span class="li-normal">variable</span></li>
         </ul>
         <li><span class="li-normal">params for report_config_layout:</span></li>
         <ul class="ul-self">

@@ -1,6 +1,34 @@
 Release Notes
 ==============================
 
+Release Galaxy 1.7.0
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Supported FortiAnalyzer 7.2.6, 7.2.7, 7.6.0 API schemas.
+- Supported check mode for all modules except "faz_generic".
+- Supported diff mode for some modules.
+
+Bugfixes
+--------
+
+- Improved code logic, reduced redundant requests for system information.
+- Improved faz_fact document.
+- Improved readme document.
+
+New Modules
+-----------
+
+- fortinet.fortianalyzer.faz_cli_system_admin_user_policyblock - Policy block write access.
+
+
 Release Galaxy 1.6.0
 ~~~~~~~~~~~~~~~~~~~~~~
 

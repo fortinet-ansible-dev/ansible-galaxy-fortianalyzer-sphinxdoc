@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode and diff mode.
 
 Requirements
 ------------
@@ -75,7 +75,7 @@ Parameters
  </li>
  <li><span class="li-head">psk</span> Fabric auth pwd. <span class="li-normal">type: str</span> <span class="li-normal">elements: str</span> <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.2.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.2.7</code></p>
  </div>
  </li>
  <li><span class="li-head">role</span> Enable or Disable SOC Fabric. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [member, supervisor]</span>  <span class="li-normal">default: member</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>

@@ -29,7 +29,7 @@ Synopsis
 
 - This module is able to configure a FortiAnalyzer device.
 - Examples include all parameters and values need to be adjusted to data sources before usage.
-
+- This module supports check mode and diff mode.
 
 Requirements
 ------------
@@ -80,7 +80,7 @@ Parameters
  </li>
  <li><span class="li-head">configuration_sync</span> Configuration sync mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [default, local]</span>  <span class="li-normal">default: default</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">downstream_access</span> Enable/disable downstream device access to this devices configuration and data. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
@@ -118,7 +118,7 @@ Parameters
  </li>
  <li><span class="li-head">fabric_object_unification</span> Fabric CMDB Object Unification. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [local, default]</span>  <span class="li-normal">default: default</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">fabric_workers</span> Number of worker processes for Security Fabric daemon. <span class="li-normal">type: int</span>  <span class="li-normal">default: 2</span>  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
@@ -128,17 +128,17 @@ Parameters
  </li>
  <li><span class="li-head">file_mgmt</span> Enable/disable Security Fabric daemon file management. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">file_quota</span> Maximum amount of memory that can be used by the daemon files (in bytes). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">file_quota_warning</span> Warn when the set percentage of quota has been used. <span class="li-normal">type: int</span>  <span class="li-normal">default: 90</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">fixed_key</span> Auto-generated fixed key used when this device is the root. (Will automatically be generated if not set.) <span class="li-normal">type: str</span> <span class="li-normal">elements: str</span> <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
@@ -168,7 +168,7 @@ Parameters
  </li>
  <li><span class="li-head">saml_configuration_sync</span> SAML setting configuration synchronization. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [local, default]</span>  <span class="li-normal">default: default</span>  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> v7.4.3</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable Security Fabric. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
@@ -232,6 +232,11 @@ Parameters
  <li><span class="li-head">upstream_port</span> The port number to use to communicate with the FortiGate upstream from this FortiGate in the Security Fabric (default = 8013). <span class="li-normal">type: int</span>  <span class="li-normal">default: 8013</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">upstream_confirm</span> Upstream authorization confirm. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [discover, confirm]</span>  <span class="li-normal">default: discover</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -298,6 +303,7 @@ Examples
                 serial: <value of string>
             upstream: <value of string>
             upstream_port: <value of integer>
+            upstream_confirm: <value in [discover, confirm]>
   
 
 
