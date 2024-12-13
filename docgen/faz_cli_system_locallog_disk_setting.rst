@@ -165,7 +165,7 @@ Parameters
  </li>
  <li><span class="li-head">max_log_file_num</span> Maximum number of log files before rolling. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span>  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">log_disk_quota</span> Quota for controlling local log size. <span class="li-normal">type: int</span>  <span class="li-normal">default: 1</span>  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>

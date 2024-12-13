@@ -234,8 +234,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upstream_confirm</span> Upstream authorization confirm. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [discover, confirm]</span>  <span class="li-normal">default: discover</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">ssl_protocol</span> set the lowest SSL protocol version for upstream and downstream connections. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">upstream_confirm</span> Upstream authorization confirm. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [discover, confirm]</span>  <span class="li-normal">default: discover</span>  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
@@ -303,6 +308,7 @@ Examples
                 serial: <value of string>
             upstream: <value of string>
             upstream_port: <value of integer>
+            ssl_protocol: <value in [follow-global-ssl-protocol, sslv3, tlsv1.0, ...]>
             upstream_confirm: <value in [discover, confirm]>
   
 

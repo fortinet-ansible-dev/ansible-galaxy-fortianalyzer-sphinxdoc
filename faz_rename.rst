@@ -515,6 +515,54 @@ Parameters
             <li><span class="li-normal">required primary key: <b>name</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_dvmdb_group.html#parameters">faz_dvmdb_group</a> </span></li>
         </ul>
+        <li><span class="li-normal">params for eventmgmt_config_basichandler:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_basichandler.html#parameters">faz_eventmgmt_config_basichandler</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_correlationhandler:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_correlationhandler.html#parameters">faz_eventmgmt_config_correlationhandler</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_dataselector:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_dataselector.html#parameters">faz_eventmgmt_config_dataselector</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_notificationprofile:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_notificationprofile.html#parameters">faz_eventmgmt_config_notificationprofile</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger.html#parameters">faz_eventmgmt_config_trigger</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger_device:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger_device.html#parameters">faz_eventmgmt_config_trigger_device</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger_filter:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger_filter.html#parameters">faz_eventmgmt_config_trigger_filter</a> </span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger_filter_rule:</span></li>
+        <ul class="ul-self">
+            
+            <li><span class="li-normal">required primary key: <b>id</b> </span></li>
+            <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_trigger_filter_rule.html#parameters">faz_eventmgmt_config_trigger_filter_rule</a> </span></li>
+        </ul>
         <li><span class="li-normal">params for report_config_chart:</span></li>
         <ul class="ul-self">
             
@@ -855,7 +903,7 @@ Parameters
             <span class="li-normal">>= 6.2.1</span>
         </li>
         <li><span class="li-required">cli_system_sslciphersuites</span> - available versions:
-            <span class="li-normal">6.4.8-6.4.14, >= 7.0.2</span>
+            <span class="li-normal">6.4.8-6.4.15, >= 7.0.2</span>
         </li>
         <li><span class="li-required">cli_system_syslog</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
@@ -877,6 +925,30 @@ Parameters
         </li>
         <li><span class="li-required">dvmdb_group</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_basichandler</span> - available versions:
+            <span class="li-normal">>= 7.2.2</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_correlationhandler</span> - available versions:
+            <span class="li-normal">>= 7.2.2</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_dataselector</span> - available versions:
+            <span class="li-normal">>= 7.2.2</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_notificationprofile</span> - available versions:
+            <span class="li-normal">>= 7.2.2</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_trigger</span> - available versions:
+            <span class="li-normal">6.2.1-7.2.1</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_trigger_device</span> - available versions:
+            <span class="li-normal">6.2.1-7.2.1</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_trigger_filter</span> - available versions:
+            <span class="li-normal">6.2.1-7.2.1</span>
+        </li>
+        <li><span class="li-required">eventmgmt_config_trigger_filter_rule</span> - available versions:
+            <span class="li-normal">6.2.1-7.2.1</span>
         </li>
         <li><span class="li-required">report_config_chart</span> - available versions:
             <span class="li-normal">>= 6.2.1</span>
@@ -1286,6 +1358,50 @@ Parameters
         <ul class="ul-self">
             <li><span class="li-normal">adom</span></li>
             <li><span class="li-normal">group</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_basichandler:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">basic-handler</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_correlationhandler:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">correlation-handler</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_dataselector:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">data-selector</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_notificationprofile:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">notification-profile</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">trigger</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger_device:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">device</span></li>
+            <li><span class="li-normal">trigger_id</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger_filter:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">filter</span></li>
+            <li><span class="li-normal">trigger_id</span></li>
+        </ul>
+        <li><span class="li-normal">params for eventmgmt_config_trigger_filter_rule:</span></li>
+        <ul class="ul-self">
+            <li><span class="li-normal">adom</span></li>
+            <li><span class="li-normal">filter_id</span></li>
+            <li><span class="li-normal">rule</span></li>
+            <li><span class="li-normal">trigger_id</span></li>
         </ul>
         <li><span class="li-normal">params for report_config_chart:</span></li>
         <ul class="ul-self">

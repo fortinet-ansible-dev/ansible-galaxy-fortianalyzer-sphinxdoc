@@ -99,7 +99,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fwmsetting_upgradetimeout</span> - available versions:
-              <span class="li-normal">7.0.5-7.0.12, >= 7.2.2</span>
+              <span class="li-normal">7.0.5-7.0.13, >= 7.2.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_multilayer</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -399,7 +399,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_topology</span> - available versions:
-              <span class="li-normal">6.4.7-6.4.14, >= 7.0.2</span>
+              <span class="li-normal">6.4.7-6.4.15, >= 7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_log_ueba</span> - available versions:
               <span class="li-normal">>= 7.4.3</span>
@@ -522,7 +522,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_sslciphersuites</span> - available versions:
-              <span class="li-normal">6.4.8-6.4.14, >= 7.0.2</span>
+              <span class="li-normal">6.4.8-6.4.15, >= 7.0.2</span>
               </li>
               <li><span class="li-required">cli_system_status</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -531,7 +531,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_webproxy</span> - available versions:
-              <span class="li-normal">6.4.8-6.4.14, >= 7.0.3</span>
+              <span class="li-normal">6.4.8-6.4.15, >= 7.0.3</span>
               </li>
               <li><span class="li-required">cli_system_workflow_approvalmatrix</span> - available versions:
               <span class="li-normal">6.2.1-6.2.9, 6.4.1-6.4.7, 7.0.0-7.0.2, >= 7.6.0</span>
@@ -583,6 +583,30 @@ Parameters
               </li>
               <li><span class="li-required">eventmgmt_basichandlers_export</span> - available versions:
               <span class="li-normal">>= 7.2.2</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_basichandler</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_correlationhandler</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_dataselector</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_notificationprofile</span> - available versions:
+              <span class="li-normal">>= 7.2.2</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_trigger</span> - available versions:
+              <span class="li-normal">6.2.1-7.2.1</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_trigger_device</span> - available versions:
+              <span class="li-normal">6.2.1-7.2.1</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_trigger_filter</span> - available versions:
+              <span class="li-normal">6.2.1-7.2.1</span>
+              </li>
+              <li><span class="li-required">eventmgmt_config_trigger_filter_rule</span> - available versions:
+              <span class="li-normal">6.2.1-7.2.1</span>
               </li>
               <li><span class="li-required">eventmgmt_correlationhandlers_export</span> - available versions:
               <span class="li-normal">>= 7.2.2</span>
@@ -798,7 +822,7 @@ Parameters
               <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_task_monitor</span> - available versions:
-              <span class="li-normal">6.4.2-7.4.3</span>
+              <span class="li-normal">6.4.2-7.4.5</span>
               </li>
               <li><span class="li-required">sys_ha_status</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -810,7 +834,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">task_task_history</span> - available versions:
-              <span class="li-normal">6.2.2-6.2.12</span>
+              <span class="li-normal">6.2.2-6.2.13</span>
               </li>
               <li><span class="li-required">task_task_line</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -2146,6 +2170,42 @@ Parameters
                   <ul class="ul-self">
                       <li>Example: ['handler-id', 'in', 1, 10041]</li>
                   </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_basichandler</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_correlationhandler</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_dataselector</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_notificationprofile</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_trigger</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_trigger_device</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+                <li><span class="li-required">trigger_id</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_trigger_filter</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+                <li><span class="li-required">trigger_id</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>eventmgmt_config_trigger_filter_rule</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+                <li><span class="li-required">filter_id</span> (Required)</li>
+                <li><span class="li-required">trigger_id</span> (Required)</li>
             </ul>
             <li><span class="li-normal">params for <b>eventmgmt_correlationhandlers_export</b>:</span> </li>
             <ul class="ul-self">

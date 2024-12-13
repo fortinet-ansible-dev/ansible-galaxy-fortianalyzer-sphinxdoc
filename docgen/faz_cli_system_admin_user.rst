@@ -532,7 +532,7 @@ Parameters
  </li>
  <li><span class="li-head">fingerprint</span> PKI user certificate fingerprint (MD5, SHA1, SHA256) constraints. <span class="li-normal">type: str</span>  <a id='label178' href="javascript:ContentClick('label179', 'label178');" onmouseover="ContentPreview('label179');" onmouseout="ContentUnpreview('label179');" title="click to collapse or expand..."> more... </a>
  <div id="label179" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.14</code>, <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.8 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">use_global_theme</span> Enable/disble global theme for administration GUI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label180' href="javascript:ContentClick('label181', 'label180');" onmouseover="ContentPreview('label181');" onmouseout="ContentUnpreview('label181');" title="click to collapse or expand..."> more... </a>

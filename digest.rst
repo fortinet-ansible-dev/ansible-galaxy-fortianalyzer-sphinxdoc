@@ -1234,6 +1234,118 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td>/dvmdb/adom/{adom}/group/{group}/object member<br>/dvmdb/group/{group}/object member</td>
   </tr>
   <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_alerts_ack.html">faz_eventmgmt_alerts_ack</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/alerts/ack</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_alerts_assign.html">faz_eventmgmt_alerts_assign</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/alerts/assign</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_alerts_comment.html">faz_eventmgmt_alerts_comment</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/alerts/comment</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_alerts_import.html">faz_eventmgmt_alerts_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/alerts/import</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_alerts_read.html">faz_eventmgmt_alerts_read</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/alerts/read</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_alerts_unack.html">faz_eventmgmt_alerts_unack</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/alerts/unack</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_basichandlers_import.html">faz_eventmgmt_basichandlers_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/basic-handlers/import</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_basichandler.html">faz_eventmgmt_config_basichandler</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/basic-handler<br>/eventmgmt/adom/{adom}/config/basic-handler/{basic-handler}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_correlationhandler.html">faz_eventmgmt_config_correlationhandler</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/correlation-handler<br>/eventmgmt/adom/{adom}/config/correlation-handler/{correlation-handler}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_dataselector.html">faz_eventmgmt_config_dataselector</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/data-selector<br>/eventmgmt/adom/{adom}/config/data-selector/{data-selector}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_notificationprofile.html">faz_eventmgmt_config_notificationprofile</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/notification-profile<br>/eventmgmt/adom/{adom}/config/notification-profile/{notification-profile}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger.html">faz_eventmgmt_config_trigger</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/trigger<br>/eventmgmt/adom/{adom}/config/trigger/{trigger}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_device.html">faz_eventmgmt_config_trigger_device</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/device<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/device/{device}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_filter.html">faz_eventmgmt_config_trigger_filter</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/filter<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/filter/{filter}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_config_trigger_filter_rule.html">faz_eventmgmt_config_trigger_filter_rule</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code><br><code class="docutils literal notranslate"><span class="pre">filter_id</span></code><br><code class="docutils literal notranslate"><span class="pre">trigger_id</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/filter/{filter_id}/rule<br>/eventmgmt/adom/{adom}/config/trigger/{trigger_id}/filter/{filter_id}/rule/{rule}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_eventmgmt_correlationhandlers_import.html">faz_eventmgmt_correlationhandlers_import</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
+  <td>None</td>
+  <td>/eventmgmt/adom/{adom}/correlation-handlers/import</td>
+  </tr>
+  <tr class="row-even">
   <td><a class="reference external" href="faz_fact.html">faz_fact</a></td>
   <td></td>
   <td>None</td>
