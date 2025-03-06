@@ -184,7 +184,7 @@ Parameters
  </li>
  <li><span class="li-head">fortirecorder_setting</span> FortiRecorder settings. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.8</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.10</code></p>
  </div>
  </li>
  <li><span class="li-head">log_viewer</span> Log viewer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>

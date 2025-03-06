@@ -64,7 +64,7 @@ Parameters
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">trigger_id</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">eventmgmt_config_trigger_device</span> device <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">eventmgmt_config_trigger_device</span> Device <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -111,19 +111,19 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: device
+      - name: Device
         fortinet.fortianalyzer.faz_eventmgmt_config_trigger_device:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           trigger_id: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_trigger_device:
-            id: <value of integer>
-            name: <value of string>
-            type: <any type of data>
-            vdom: <value of string>
+            id: 0 # Required variable, integer
+            # name: <value of string>
+            # type: <any type of data>
+            # vdom: <value of string>
   
 
 

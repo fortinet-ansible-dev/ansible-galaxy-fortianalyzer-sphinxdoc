@@ -88,7 +88,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">initial_sync</span> Need to sync data from master before up as an HA member. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [false, true]</span>  <span class="li-normal">default: true</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">initial_sync</span> Need to sync data from master before up as an HA member. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [false, true, disable, enable]</span>  <span class="li-normal">default: true</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>

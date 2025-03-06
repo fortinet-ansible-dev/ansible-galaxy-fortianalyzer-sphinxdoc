@@ -65,7 +65,7 @@ Parameters
  <li><span class="li-head">adom</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">filter_id</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">trigger_id</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">eventmgmt_config_trigger_filter_rule</span> rule <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">eventmgmt_config_trigger_filter_rule</span> Rule <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
@@ -117,7 +117,7 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: rule
+      - name: Rule
         fortinet.fortianalyzer.faz_eventmgmt_config_trigger_filter_rule:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
@@ -125,13 +125,13 @@ Examples
           adom: <your own value>
           filter_id: <your own value>
           trigger_id: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_trigger_filter_rule:
-            id: <value of integer>
-            key: <value of string>
-            value: <value of string>
-            value_type: <value of integer>
-            oper: <value in [less-than, not-contain, less-or-equal, ...]>
+            id: 0 # Required variable, integer
+            # key: <value of string>
+            # value: <value of string>
+            # value_type: <value of integer>
+            # oper: <value in [less-than, not-contain, less-or-equal, ...]>
   
 
 

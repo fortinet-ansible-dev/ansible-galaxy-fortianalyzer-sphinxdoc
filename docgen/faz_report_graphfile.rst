@@ -105,8 +105,8 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           report_graphfile:
-            data: <value of string>
-            file_name: <value of string>
+            # data: <value of string>
+            # file_name: <value of string>
   
 
 

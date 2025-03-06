@@ -103,8 +103,8 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           report_template_import:
-            data: <value of string>
-            dev_type: <value of string>
+            # data: <value of string>
+            # dev_type: <value of string>
   
 
 

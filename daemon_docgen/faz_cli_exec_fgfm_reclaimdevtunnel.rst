@@ -42,7 +42,7 @@ FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.1</code></p>
 
 
 
@@ -65,7 +65,7 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">flags</span> <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [force, get_info]</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.1</code></p>
  </div>
  </li>
  </ul>

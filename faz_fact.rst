@@ -810,7 +810,7 @@ Parameters
               <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_playbook_monitor</span> - available versions:
-              <span class="li-normal">6.4.2-7.2.1, >= 7.6.0</span>
+              <span class="li-normal">6.4.2-7.2.1, 7.6.0-7.6.1</span>
               </li>
               <li><span class="li-required">soar_playbook_run</span> - available versions:
               <span class="li-normal">>= 6.4.2</span>
@@ -822,7 +822,7 @@ Parameters
               <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_task_monitor</span> - available versions:
-              <span class="li-normal">6.4.2-7.4.5</span>
+              <span class="li-normal">6.4.2-7.4.6, >= 7.6.2</span>
               </li>
               <li><span class="li-required">sys_ha_status</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -2753,6 +2753,7 @@ Parameters
                   </ul>
                 <li><span class="li-required">instance-id</span> (Optional) Instance ID to get.</li>
                 <li><span class="li-required">playbook-uuid</span> (Optional) Playbook UUID to get. An unique identifier of a playbook. 32 hexadecimal digits is displayed in five groups separated by hyphens, in the form 8-4-4-4-12 for a total of 36 characters</li>
+                <li><span class="li-required">run-id</span> (Optional) Run ID to track specific playbook run</li>
                 <li><span class="li-required">sort-by</span> (Optional) Sort by field.</li>
                 <li><span class="li-required">time-range</span> (Optional) Time range for source data selection.</li>
                 <li><span class="li-required">timezone</span> (Optional) The timezone index or name. Time range in request and date/time if any in response will follow this timezone. See Appendix</li>

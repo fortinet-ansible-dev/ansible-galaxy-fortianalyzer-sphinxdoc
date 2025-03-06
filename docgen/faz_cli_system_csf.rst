@@ -236,7 +236,7 @@ Parameters
  </li>
  <li><span class="li-head">ssl_protocol</span> set the lowest SSL protocol version for upstream and downstream connections. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.5</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">upstream_confirm</span> Upstream authorization confirm. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [discover, confirm]</span>  <span class="li-normal">default: discover</span>  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
@@ -275,41 +275,41 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           cli_system_csf:
-            accept_auth_by_cert: <value in [disable, enable]>
-            authorization_request_type: <value in [certificate, serial]>
-            certificate: <value of string>
-            configuration_sync: <value in [default, local]>
-            downstream_access: <value in [disable, enable]>
-            downstream_accprofile: <value of string>
-            fabric_connector:
-              - accprofile: <value of string>
-                configuration_write_access: <value in [disable, enable]>
-                serial: <value of string>
-            fabric_object_unification: <value in [local, default]>
-            fabric_workers: <value of integer>
-            file_mgmt: <value in [disable, enable]>
-            file_quota: <value of integer>
-            file_quota_warning: <value of integer>
-            fixed_key: <value of string>
-            forticloud_account_enforcement: <value in [disable, enable]>
-            group_name: <value of string>
-            group_password: <value of string>
-            log_unification: <value in [disable, enable]>
-            saml_configuration_sync: <value in [local, default]>
-            status: <value in [disable, enable]>
-            trusted_list:
-              - action: <value in [accept, deny]>
-                authorization_type: <value in [serial, certificate]>
-                certificate: <value of string>
-                downstream_authorization: <value in [disable, enable]>
-                ha_members: <value of string>
-                index: <value of integer>
-                name: <value of string>
-                serial: <value of string>
-            upstream: <value of string>
-            upstream_port: <value of integer>
-            ssl_protocol: <value in [follow-global-ssl-protocol, sslv3, tlsv1.0, ...]>
-            upstream_confirm: <value in [discover, confirm]>
+            # accept_auth_by_cert: <value in [disable, enable]>
+            # authorization_request_type: <value in [certificate, serial]>
+            # certificate: <value of string>
+            # configuration_sync: <value in [default, local]>
+            # downstream_access: <value in [disable, enable]>
+            # downstream_accprofile: <value of string>
+            # fabric_connector:
+            #   - accprofile: <value of string>
+            #     configuration_write_access: <value in [disable, enable]>
+            #     serial: <value of string>
+            # fabric_object_unification: <value in [local, default]>
+            # fabric_workers: <value of integer>
+            # file_mgmt: <value in [disable, enable]>
+            # file_quota: <value of integer>
+            # file_quota_warning: <value of integer>
+            # fixed_key: <value of string>
+            # forticloud_account_enforcement: <value in [disable, enable]>
+            # group_name: <value of string>
+            # group_password: <value of string>
+            # log_unification: <value in [disable, enable]>
+            # saml_configuration_sync: <value in [local, default]>
+            # status: <value in [disable, enable]>
+            # trusted_list:
+            #   - action: <value in [accept, deny]>
+            #     authorization_type: <value in [serial, certificate]>
+            #     certificate: <value of string>
+            #     downstream_authorization: <value in [disable, enable]>
+            #     ha_members: <value of string>
+            #     index: <value of integer>
+            #     name: <value of string>
+            #     serial: <value of string>
+            # upstream: <value of string>
+            # upstream_port: <value of integer>
+            # ssl_protocol: <value in [follow-global-ssl-protocol, sslv3, tlsv1.0, ...]>
+            # upstream_confirm: <value in [discover, confirm]>
   
 
 

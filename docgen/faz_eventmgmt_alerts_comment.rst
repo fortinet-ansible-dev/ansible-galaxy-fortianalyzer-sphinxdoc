@@ -110,9 +110,9 @@ Examples
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
           eventmgmt_alerts_comment:
-            alertid: <list of string>
-            comment: <value of string>
-            update_by: <value of string>
+            # alertid: <list of string>
+            # comment: <value of string>
+            # update_by: <value of string>
   
 
 

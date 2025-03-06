@@ -1,6 +1,27 @@
 Release Notes
 ==============================
 
+Release Galaxy 1.8.1
+~~~~~~~~~~~~~~~~~~~~~~
+
+Release Target
+---------------
+
+FortiAnalyzer version: ``v6.2``, ``v6.4``, ``v7.0``, ``v7.2`` and ``v7.4``
+
+Minor Changes
+-------------
+
+- Supported FortiAnalyzer 7.2.9, 7.2.10, 7.4.6, 7.6.2
+
+Bugfixes
+--------
+
+- Corrected the mainkey of some "eventmgmt" modules.
+- Modified example playbooks to support ansible-lint check.
+
+|
+
 Release Galaxy 1.8.0
 ~~~~~~~~~~~~~~~~~~~~~~
 

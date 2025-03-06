@@ -223,7 +223,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">system_support_fct</span> Supported FortiClient versions. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 7.2]</span>  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">system_support_fct</span> Supported FortiClient versions. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [4.x, 5.0, 5.2, 5.4, 5.6, 6.0, 6.2, 6.4, 7.0, 7.2, 7.4]</span>  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>

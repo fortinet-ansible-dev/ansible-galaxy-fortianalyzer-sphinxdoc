@@ -140,15 +140,15 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_dataselector:
-            address_filter: <value of dict>
-            device: <value of dict>
-            device_specify: <any type of data>
-            name: <value of string>
-            rule: <value of dict>
-            selector_id: <value of string>
-            subnet_scope: <value in [both, source, destination]>
+            selector_id: "your value" # Required variable, string
+            # address_filter: <value of dict>
+            # device: <value of dict>
+            # device_specify: <any type of data>
+            # name: <value of string>
+            # rule: <value of dict>
+            # subnet_scope: <value in [both, source, destination]>
   
 
 

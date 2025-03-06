@@ -63,7 +63,7 @@ Parameters
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
  <li><span class="li-head">adom</span> The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">eventmgmt_config_trigger</span> trigger <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">eventmgmt_config_trigger</span> Trigger <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">address_filter</span> reference: /eventmgmt/adom/&lt;adom-name&gt;/config/trigger/&lt;trigger_id&gt;/address-filter <span class="li-normal">type: list of dict</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -499,91 +499,91 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: trigger
+      - name: Trigger
         fortinet.fortianalyzer.faz_eventmgmt_config_trigger:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           adom: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           eventmgmt_config_trigger:
-            address_filter:
-              - id: <value of integer>
-                include_option: <any type of data>
-                address_type: <value in [address-group, address-obj]>
-                grp_name: <value of string>
-                obj_name: <value of string>
-            device:
-              - id: <value of integer>
-                name: <value of string>
-                type: <any type of data>
-                vdom: <value of string>
-            fabric_connector:
-              - refid: <value of string>
-            filter:
-              - dev_type: <any type of data>
-                id: <value of integer>
-                rule:
-                  - id: <value of integer>
-                    key: <value of string>
-                    value: <value of string>
-                    value_type: <value of integer>
-                    oper: <value in [less-than, not-contain, less-or-equal, ...]>
-                subject: <value of string>
-                tag: <value of string>
-                enable: <value in [enable, disable]>
-                eventstatus: <value of string>
-                eventtype: <value of string>
-                extrainfo: <value of string>
-                extrainfo_type: <value in [default, custom]>
-                filter_expr: <value of string>
-                groupby1: <value of string>
-                groupby2: <value of string>
-                logtype: <value of string>
-                rule_relation: <value of integer>
-                severity: <value in [high, medium, critical, ...]>
-                thres_count: <value of integer>
-                thres_duration: <value of integer>
-                utmevent: <value of string>
-                indicator:
-                  - count: <value of integer>
-                    name: <value of string>
-                    type: <value of string>
-            id: <value of integer>
-            name: <value of string>
-            uuid: <value of string>
-            version: <value of integer>
-            creation_time: <value of integer>
-            description: <value of string>
-            device_specify: <value in [all-devices, specify, local-host]>
-            email_from: <value of string>
-            email_html_format: <value of integer>
-            email_subject: <value of string>
-            email_svr: <value of string>
-            email_to: <value of string>
-            enable: <value in [enable, disable]>
-            enable_time: <value of integer>
-            filter_relation: <value of integer>
-            handlertype: <value in [handler-type-local, handler-type-remote]>
-            protected: <value in [enable, disable]>
-            snmp_community: <value of string>
-            snmpv3_user: <value of string>
-            syslog_svr: <value of string>
-            target_enable: <value of integer>
-            template_url: <value of string>
-            update_time: <value of integer>
-            content_pack_id: <value of string>
-            content_pack_uuid: <value of string>
-            pre_filter:
-              - dev_type: <any type of data>
-                id: <value of integer>
-                rule:
-                  - id: <value of integer>
-                    key: <value of string>
-                    value: <value of string>
-                    value_type: <value of integer>
-                subject: <value of string>
-                tag: <value of string>
+            id: 0 # Required variable, integer
+            # address_filter:
+            #   - id: <value of integer>
+            #     include_option: <any type of data>
+            #     address_type: <value in [address-group, address-obj]>
+            #     grp_name: <value of string>
+            #     obj_name: <value of string>
+            # device:
+            #   - id: <value of integer>
+            #     name: <value of string>
+            #     type: <any type of data>
+            #     vdom: <value of string>
+            # fabric_connector:
+            #   - refid: <value of string>
+            # filter:
+            #   - dev_type: <any type of data>
+            #     id: <value of integer>
+            #     rule:
+            #       - id: <value of integer>
+            #         key: <value of string>
+            #         value: <value of string>
+            #         value_type: <value of integer>
+            #         oper: <value in [less-than, not-contain, less-or-equal, ...]>
+            #     subject: <value of string>
+            #     tag: <value of string>
+            #     enable: <value in [enable, disable]>
+            #     eventstatus: <value of string>
+            #     eventtype: <value of string>
+            #     extrainfo: <value of string>
+            #     extrainfo_type: <value in [default, custom]>
+            #     filter_expr: <value of string>
+            #     groupby1: <value of string>
+            #     groupby2: <value of string>
+            #     logtype: <value of string>
+            #     rule_relation: <value of integer>
+            #     severity: <value in [high, medium, critical, ...]>
+            #     thres_count: <value of integer>
+            #     thres_duration: <value of integer>
+            #     utmevent: <value of string>
+            #     indicator:
+            #       - count: <value of integer>
+            #         name: <value of string>
+            #         type: <value of string>
+            # name: <value of string>
+            # uuid: <value of string>
+            # version: <value of integer>
+            # creation_time: <value of integer>
+            # description: <value of string>
+            # device_specify: <value in [all-devices, specify, local-host]>
+            # email_from: <value of string>
+            # email_html_format: <value of integer>
+            # email_subject: <value of string>
+            # email_svr: <value of string>
+            # email_to: <value of string>
+            # enable: <value in [enable, disable]>
+            # enable_time: <value of integer>
+            # filter_relation: <value of integer>
+            # handlertype: <value in [handler-type-local, handler-type-remote]>
+            # protected: <value in [enable, disable]>
+            # snmp_community: <value of string>
+            # snmpv3_user: <value of string>
+            # syslog_svr: <value of string>
+            # target_enable: <value of integer>
+            # template_url: <value of string>
+            # update_time: <value of integer>
+            # content_pack_id: <value of string>
+            # content_pack_uuid: <value of string>
+            # pre_filter:
+            #   - dev_type: <any type of data>
+            #     id: <value of integer>
+            #     rule:
+            #       - id: <value of integer>
+            #         key: <value of string>
+            #         value: <value of string>
+            #         value_type: <value of integer>
+            #     subject: <value of string>
+            #     tag: <value of string>
   
 
 

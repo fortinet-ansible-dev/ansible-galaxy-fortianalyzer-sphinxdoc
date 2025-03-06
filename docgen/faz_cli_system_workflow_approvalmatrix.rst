@@ -62,7 +62,7 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">cli_system_workflow_approvalmatrix</span> workflow approval matrix. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">cli_system_workflow_approvalmatrix</span> Workflow approval matrix. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">adom_name</span> Adom Name <span class="li-normal">type: str</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">

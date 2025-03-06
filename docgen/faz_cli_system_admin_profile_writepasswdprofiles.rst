@@ -101,9 +101,9 @@ Examples
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           profile: <your own value>
-          state: <value in [present, absent]>
+          state: present # <value in [present, absent]>
           cli_system_admin_profile_writepasswdprofiles:
-            profileid: <value of string>
+            profileid: "your value" # Required variable, string
   
 
 

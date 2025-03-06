@@ -518,25 +518,25 @@ Parameters
         <li><span class="li-normal">params for eventmgmt_config_basichandler:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>handler_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_basichandler.html#parameters">faz_eventmgmt_config_basichandler</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_correlationhandler:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>handler_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_correlationhandler.html#parameters">faz_eventmgmt_config_correlationhandler</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_dataselector:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>selector_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_dataselector.html#parameters">faz_eventmgmt_config_dataselector</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_notificationprofile:</span></li>
         <ul class="ul-self">
             
-            <li><span class="li-normal">required primary key: <b>name</b> </span></li>
+            <li><span class="li-normal">required primary key: <b>profile_id</b> </span></li>
             <li><span class="li-normal">optional params list: <a href="docgen/faz_eventmgmt_config_notificationprofile.html#parameters">faz_eventmgmt_config_notificationprofile</a> </span></li>
         </ul>
         <li><span class="li-normal">params for eventmgmt_config_trigger:</span></li>

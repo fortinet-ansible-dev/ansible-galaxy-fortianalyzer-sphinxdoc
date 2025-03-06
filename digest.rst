@@ -1286,28 +1286,28 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_basichandler.html">faz_eventmgmt_config_basichandler</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">handler_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/basic-handler<br>/eventmgmt/adom/{adom}/config/basic-handler/{basic-handler}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_correlationhandler.html">faz_eventmgmt_config_correlationhandler</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">handler_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/correlation-handler<br>/eventmgmt/adom/{adom}/config/correlation-handler/{correlation-handler}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_dataselector.html">faz_eventmgmt_config_dataselector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">selector_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/data-selector<br>/eventmgmt/adom/{adom}/config/data-selector/{data-selector}</td>
   </tr>
   <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_eventmgmt_config_notificationprofile.html">faz_eventmgmt_config_notificationprofile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom</span></code></td>
-  <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">profile_id</span></code></td>
   <td>/eventmgmt/adom/{adom}/config/notification-profile<br>/eventmgmt/adom/{adom}/config/notification-profile/{notification-profile}</td>
   </tr>
   <tr class="row-odd">
