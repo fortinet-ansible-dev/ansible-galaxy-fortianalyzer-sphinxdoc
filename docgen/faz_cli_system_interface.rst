@@ -237,6 +237,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:
@@ -260,6 +261,7 @@ Examples
       ansible_httpapi_validate_certs: false
   
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:

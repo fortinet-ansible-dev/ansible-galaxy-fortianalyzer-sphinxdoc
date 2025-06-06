@@ -24,6 +24,7 @@ In this case, create a file named ``hosts``:
 
    [fortianalyzers:vars]
    ansible_network_os=fortinet.fortianalyzer.fortianalyzer
+   ansible_facts_modules=setup
    ansible_httpapi_port=443
    ansible_httpapi_use_ssl=true
    ansible_httpapi_validate_certs=false
@@ -43,6 +44,7 @@ In the example: ``test.yml``, we are going to create a script on FortiAnalyzer:
      vars:
        # You don't need to specify the following vars if you specified them in the host file.
        # ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+       # ansible_facts_modules: setup
        # ansible_httpapi_port: 443
        # ansible_httpapi_use_ssl: true
        # ansible_httpapi_validate_certs: false

@@ -73,6 +73,11 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">collector_auth</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <div id="label5" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -90,6 +95,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:

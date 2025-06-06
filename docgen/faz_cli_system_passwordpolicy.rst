@@ -93,6 +93,11 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">login_lockout_upon_downgrade</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -110,6 +115,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:

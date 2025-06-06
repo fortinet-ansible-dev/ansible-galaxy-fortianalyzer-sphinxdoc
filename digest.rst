@@ -128,627 +128,641 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td>/cli/global/fmupdate/fds-setting/update-schedule</td>
   </tr>
   <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_fmupdate_fgdsetting.html">faz_cli_fmupdate_fgdsetting</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td>None</td>
+  <td>None</td>
+  <td>/cli/global/fmupdate/fgd-setting</td>
+  </tr>
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_fwmsetting.html">faz_cli_fmupdate_fwmsetting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/fwm-setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_fwmsetting_upgradetimeout.html">faz_cli_fmupdate_fwmsetting_upgradetimeout</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/fwm-setting/upgrade-timeout</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_multilayer.html">faz_cli_fmupdate_multilayer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/multilayer</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_publicnetwork.html">faz_cli_fmupdate_publicnetwork</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/publicnetwork</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_serveraccesspriorities.html">faz_cli_fmupdate_serveraccesspriorities</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/server-access-priorities</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_serveraccesspriorities_privateserver.html">faz_cli_fmupdate_serveraccesspriorities_privateserver</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/fmupdate/server-access-priorities/private-server<br>/cli/global/fmupdate/server-access-priorities/private-server/{private-server}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_serveroverridestatus.html">faz_cli_fmupdate_serveroverridestatus</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/server-override-status</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_service.html">faz_cli_fmupdate_service</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/service</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_webspam_fgdsetting.html">faz_cli_fmupdate_webspam_fgdsetting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/web-spam/fgd-setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_webspam_fgdsetting_serveroverride.html">faz_cli_fmupdate_webspam_fgdsetting_serveroverride</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/web-spam/fgd-setting/server-override</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_webspam_fgdsetting_serveroverride_servlist.html">faz_cli_fmupdate_webspam_fgdsetting_serveroverride_servlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/fmupdate/web-spam/fgd-setting/server-override/servlist<br>/cli/global/fmupdate/web-spam/fgd-setting/server-override/servlist/{servlist}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_fmupdate_webspam_webproxy.html">faz_cli_fmupdate_webspam_webproxy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/fmupdate/web-spam/web-proxy</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_metafields_system_admin_user.html">faz_cli_metafields_system_admin_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">delete</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/_meta_fields/system/admin/user</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_group.html">faz_cli_system_admin_group</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/admin/group<br>/cli/global/system/admin/group/{group}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_group_member.html">faz_cli_system_admin_group_member</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">group</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/admin/group/{group}/member<br>/cli/global/system/admin/group/{group}/member/{member}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_ldap.html">faz_cli_system_admin_ldap</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/admin/ldap<br>/cli/global/system/admin/ldap/{ldap}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_ldap_adom.html">faz_cli_system_admin_ldap_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">ldap</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom-name</span></code></td>
   <td>/cli/global/system/admin/ldap/{ldap}/adom<br>/cli/global/system/admin/ldap/{ldap}/adom/{adom}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile.html">faz_cli_system_admin_profile</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">profileid</span></code></td>
   <td>/cli/global/system/admin/profile<br>/cli/global/system/admin/profile/{profile}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_datamaskcustomfields.html">faz_cli_system_admin_profile_datamaskcustomfields</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">field-name</span></code></td>
   <td>/cli/global/system/admin/profile/{profile}/datamask-custom-fields<br>/cli/global/system/admin/profile/{profile}/datamask-custom-fields/{datamask-custom-fields}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_writepasswdprofiles.html">faz_cli_system_admin_profile_writepasswdprofiles</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profileid</span></code></td>
   <td>/cli/global/system/admin/profile/{profile}/write-passwd-profiles<br>/cli/global/system/admin/profile/{profile}/write-passwd-profiles/{write-passwd-profiles}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_profile_writepasswduserlist.html">faz_cli_system_admin_profile_writepasswduserlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">profile</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">userid</span></code></td>
   <td>/cli/global/system/admin/profile/{profile}/write-passwd-user-list<br>/cli/global/system/admin/profile/{profile}/write-passwd-user-list/{write-passwd-user-list}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_radius.html">faz_cli_system_admin_radius</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/admin/radius<br>/cli/global/system/admin/radius/{radius}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_setting.html">faz_cli_system_admin_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/admin/setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_tacacs.html">faz_cli_system_admin_tacacs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/admin/tacacs<br>/cli/global/system/admin/tacacs/{tacacs}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user.html">faz_cli_system_admin_user</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">userid</span></code></td>
   <td>/cli/global/system/admin/user<br>/cli/global/system/admin/user/{user}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_adom.html">faz_cli_system_admin_user_adom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom-name</span></code></td>
   <td>/cli/global/system/admin/user/{user}/adom<br>/cli/global/system/admin/user/{user}/adom/{adom}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_adomexclude.html">faz_cli_system_admin_user_adomexclude</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">adom-name</span></code></td>
   <td>/cli/global/system/admin/user/{user}/adom-exclude<br>/cli/global/system/admin/user/{user}/adom-exclude/{adom-exclude}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_dashboard.html">faz_cli_system_admin_user_dashboard</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">tabid</span></code></td>
   <td>/cli/global/system/admin/user/{user}/dashboard<br>/cli/global/system/admin/user/{user}/dashboard/{dashboard}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_dashboardtabs.html">faz_cli_system_admin_user_dashboardtabs</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/admin/user/{user}/dashboard-tabs<br>/cli/global/system/admin/user/{user}/dashboard-tabs/{dashboard-tabs}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_metadata.html">faz_cli_system_admin_user_metadata</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">fieldname</span></code></td>
   <td>/cli/global/system/admin/user/{user}/meta-data<br>/cli/global/system/admin/user/{user}/meta-data/{meta-data}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_policyblock.html">faz_cli_system_admin_user_policyblock</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">policy_block_name</span></code></td>
   <td>/cli/global/system/admin/user/{user}/policy-block<br>/cli/global/system/admin/user/{user}/policy-block/{policy-block}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_policypackage.html">faz_cli_system_admin_user_policypackage</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">policy-package-name</span></code></td>
   <td>/cli/global/system/admin/user/{user}/policy-package<br>/cli/global/system/admin/user/{user}/policy-package/{policy-package}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_admin_user_restrictdevvdom.html">faz_cli_system_admin_user_restrictdevvdom</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">user</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">dev-vdom</span></code></td>
   <td>/cli/global/system/admin/user/{user}/restrict-dev-vdom<br>/cli/global/system/admin/user/{user}/restrict-dev-vdom/{restrict-dev-vdom}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_alertconsole.html">faz_cli_system_alertconsole</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/alert-console</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_alertemail.html">faz_cli_system_alertemail</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/alertemail</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_alertevent.html">faz_cli_system_alertevent</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/alert-event<br>/cli/global/system/alert-event/{alert-event}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_alertevent_alertdestination.html">faz_cli_system_alertevent_alertdestination</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">alert-event</span></code></td>
   <td>None</td>
   <td>/cli/global/system/alert-event/{alert-event}/alert-destination<br>/cli/global/system/alert-event/{alert-event}/alert-destination/{alert-destination}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_autodelete.html">faz_cli_system_autodelete</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/auto-delete</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_autodelete_dlpfilesautodeletion.html">faz_cli_system_autodelete_dlpfilesautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/auto-delete/dlp-files-auto-deletion</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_autodelete_logautodeletion.html">faz_cli_system_autodelete_logautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/auto-delete/log-auto-deletion</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_autodelete_quarantinefilesautodeletion.html">faz_cli_system_autodelete_quarantinefilesautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/auto-delete/quarantine-files-auto-deletion</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_autodelete_reportautodeletion.html">faz_cli_system_autodelete_reportautodeletion</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/auto-delete/report-auto-deletion</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_backup_allsettings.html">faz_cli_system_backup_allsettings</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/backup/all-settings</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_centralmanagement.html">faz_cli_system_centralmanagement</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/central-management</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_certificate_ca.html">faz_cli_system_certificate_ca</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/certificate/ca<br>/cli/global/system/certificate/ca/{ca}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_certificate_crl.html">faz_cli_system_certificate_crl</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/certificate/crl<br>/cli/global/system/certificate/crl/{crl}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_certificate_local.html">faz_cli_system_certificate_local</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/certificate/local<br>/cli/global/system/certificate/local/{local}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_certificate_oftp.html">faz_cli_system_certificate_oftp</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/certificate/oftp</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_certificate_remote.html">faz_cli_system_certificate_remote</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/certificate/remote<br>/cli/global/system/certificate/remote/{remote}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_certificate_ssh.html">faz_cli_system_certificate_ssh</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/certificate/ssh<br>/cli/global/system/certificate/ssh/{ssh}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_connector.html">faz_cli_system_connector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/connector</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_csf.html">faz_cli_system_csf</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/csf</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_csf_fabricconnector.html">faz_cli_system_csf_fabricconnector</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">serial</span></code></td>
   <td>/cli/global/system/csf/fabric-connector<br>/cli/global/system/csf/fabric-connector/{fabric-connector}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_csf_trustedlist.html">faz_cli_system_csf_trustedlist</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/csf/trusted-list<br>/cli/global/system/csf/trusted-list/{trusted-list}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_dns.html">faz_cli_system_dns</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/dns</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_docker.html">faz_cli_system_docker</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/docker</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_fips.html">faz_cli_system_fips</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/fips</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_fortiview_autocache.html">faz_cli_system_fortiview_autocache</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/fortiview/auto-cache</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_fortiview_setting.html">faz_cli_system_fortiview_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/fortiview/setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_global.html">faz_cli_system_global</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/global</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_guiact.html">faz_cli_system_guiact</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/guiact</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_ha.html">faz_cli_system_ha</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/ha</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_ha_peer.html">faz_cli_system_ha_peer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/system/ha/peer<br>/cli/global/system/ha/peer/{peer}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_ha_privatepeer.html">faz_cli_system_ha_privatepeer</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/system/ha/private-peer<br>/cli/global/system/ha/private-peer/{private-peer}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_ha_vip.html">faz_cli_system_ha_vip</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/system/ha/vip<br>/cli/global/system/ha/vip/{vip}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_interface.html">faz_cli_system_interface</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">name</span></code></td>
   <td>/cli/global/system/interface<br>/cli/global/system/interface/{interface}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_interface_ipv6.html">faz_cli_system_interface_ipv6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
   <td>None</td>
   <td>/cli/global/system/interface/{interface}/ipv6</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_interface_member.html">faz_cli_system_interface_member</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">interface</span></code></td>
   <td><code class="docutils literal notranslate"><span class="pre">interface-name</span></code></td>
   <td>/cli/global/system/interface/{interface}/member<br>/cli/global/system/interface/{interface}/member/{member}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy.html">faz_cli_system_localinpolicy</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/system/local-in-policy<br>/cli/global/system/local-in-policy/{local-in-policy}</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy6.html">faz_cli_system_localinpolicy6</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/system/local-in-policy6<br>/cli/global/system/local-in-policy6/{local-in-policy6}</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_disk_filter.html">faz_cli_system_locallog_disk_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/disk/filter</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_disk_setting.html">faz_cli_system_locallog_disk_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/disk/setting</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_fortianalyzer2_filter.html">faz_cli_system_locallog_fortianalyzer2_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/fortianalyzer2/filter</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_fortianalyzer2_setting.html">faz_cli_system_locallog_fortianalyzer2_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/fortianalyzer2/setting</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_fortianalyzer3_filter.html">faz_cli_system_locallog_fortianalyzer3_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/fortianalyzer3/filter</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_fortianalyzer3_setting.html">faz_cli_system_locallog_fortianalyzer3_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/fortianalyzer3/setting</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_fortianalyzer_filter.html">faz_cli_system_locallog_fortianalyzer_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/fortianalyzer/filter</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_fortianalyzer_setting.html">faz_cli_system_locallog_fortianalyzer_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/fortianalyzer/setting</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_memory_filter.html">faz_cli_system_locallog_memory_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/memory/filter</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_memory_setting.html">faz_cli_system_locallog_memory_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/memory/setting</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_setting.html">faz_cli_system_locallog_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_syslogd2_filter.html">faz_cli_system_locallog_syslogd2_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/syslogd2/filter</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_syslogd2_setting.html">faz_cli_system_locallog_syslogd2_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/syslogd2/setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_syslogd3_filter.html">faz_cli_system_locallog_syslogd3_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/syslogd3/filter</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_syslogd3_setting.html">faz_cli_system_locallog_syslogd3_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/syslogd3/setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_syslogd_filter.html">faz_cli_system_locallog_syslogd_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/syslogd/filter</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_syslogd_setting.html">faz_cli_system_locallog_syslogd_setting</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/locallog/syslogd/setting</td>
   </tr>
-  <tr class="row-odd">
+  <tr class="row-even">
   <td><a class="reference external" href="docgen/faz_cli_system_log_alert.html">faz_cli_system_log_alert</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td>None</td>
   <td>/cli/global/system/log/alert</td>
   </tr>
-  <tr class="row-even">
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_log_devicedisable.html">faz_cli_system_log_devicedisable</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>
   <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
   <td>/cli/global/system/log/device-disable<br>/cli/global/system/log/device-disable/{device-disable}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_system_log_deviceselector.html">faz_cli_system_log_deviceselector</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td>None</td>
+  <td><code class="docutils literal notranslate"><span class="pre">id</span></code></td>
+  <td>/cli/global/system/log/device-selector<br>/cli/global/system/log/device-selector/{device-selector}</td>
   </tr>
   <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_log_fospolicystats.html">faz_cli_system_log_fospolicystats</a></td>

@@ -583,6 +583,11 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">old_password</span> <span class="li-normal">type: str</span>  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -600,6 +605,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:

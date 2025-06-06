@@ -42,7 +42,7 @@ FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
 
 
 
@@ -66,39 +66,39 @@ Parameters
  <li><span class="li-head">servlist</span> <span class="li-normal">type: list of dict</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">id</span> Override server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ip</span> IPv4 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">ip6</span> IPv6 address of the override server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">port</span> Port number to use when contacting FortiGuard (1 - 65535, default = 443). <span class="li-normal">type: int</span>  <span class="li-normal">default: 443</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">service_type</span> Override service type. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [fgd, fgc, fsa, fgfq, geoip, iot-collect]</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">status</span> Override status. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.2</code></p>
  </div>
  </li>
  </ul>
@@ -118,6 +118,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:

@@ -1,13 +1,13 @@
-:source: faz_cli_fmupdate_serveraccesspriorities.py
+:source: faz_cli_system_log_deviceselector.py
 
 :orphan:
 
-.. _faz_cli_fmupdate_serveraccesspriorities:
+.. _faz_cli_system_log_deviceselector:
 
-faz_cli_fmupdate_serveraccesspriorities -- Configure priorities for FortiGate units accessing antivirus updates and web filtering services.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_log_deviceselector -- Cli system log device selector
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-.. versionadded:: 1.0.0
+.. versionadded:: 1.9.0
 
 .. warning::
    Starting in version 2.0.0, all variables will be named in the underscore naming convention.
@@ -42,7 +42,7 @@ FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
 
 
 
@@ -61,49 +61,47 @@ Parameters
  <li><span class="li-head">version_check</span> If set to True, it will check whether the parameters used are supported by the corresponding version of FortiAnazlyer locally based on FNDN data. A warning will be returned in version_check_warning if there is a mismatch. This warning is only a suggestion and may not be accurate. <span class="li-normal">type: bool</span> <span class="li-normal"> default: False</span> </li>
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
- <li><span class="li-head">cli_fmupdate_serveraccesspriorities</span> Configure priorities for FortiGate units accessing antivirus updates and web filtering services. <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
+ <li><span class="li-head">cli_system_log_deviceselector</span> Cli system log device selector <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">access_public</span> Enable/disable FortiGates to Access Public FortiGuard Servers when Private Servers are Unavailable (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">action</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [include, exclude]</span>  <span class="li-normal">default: include</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">av_ips</span> Enable/disable Antivirus and IPS Update Service for Private Server(default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">comment</span> <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">private_server</span> <span class="li-normal">type: list of dict</span>
- <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">devid</span> <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">id</span> Private server ID (1 - 10). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ </li>
+ <li><span class="li-head">expire</span> <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip</span> IPv4 address of the FortiManager unit or private server. <span class="li-normal">type: str</span>  <span class="li-normal">default: 0.0.0.0</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip6</span> IPv6 address of the FortiManager unit or private server. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">srcip</span> <span class="li-normal">type: str</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">time_zone</span> Time zone of the private server (-24 = local time zone, default = -24). <span class="li-normal">type: int</span>  <span class="li-normal">default: -24</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">srcip_mode</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [UDP514, TCP514, any]</span>  <span class="li-normal">default: UDP514</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">web_spam</span> Enable/disable Web Filter and Email Filter Update Service for Private Server (default = enable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, devid, srcip]</span>  <span class="li-normal">default: unspecified</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -123,23 +121,30 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
-    gather_facts: false
-    connection: httpapi
     hosts: fortianalyzers
-    tasks:
-      - name:
-          Configure priorities for FortiGate units accessing antivirus updates and
-          web filtering services.
-        fortinet.fortianalyzer.faz_cli_fmupdate_serveraccesspriorities:
-          cli_fmupdate_serveraccesspriorities:
-            access_public: disable
-            av_ips: disable
-            web_spam: disable
+    connection: httpapi
+    gather_facts: false
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer
       ansible_httpapi_port: 443
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
+    tasks:
+      - name: Cli system log device selector
+        fortinet.fortianalyzer.faz_cli_system_log_deviceselector:
+          # bypass_validation: false
+          # rc_succeeded: [0, -2, -3, ...]
+          # rc_failed: [-2, -3, ...]
+          state: present # <value in [present, absent]>
+          cli_system_log_deviceselector:
+            id: 0 # Required variable, integer
+            # action: <value in [include, exclude]>
+            # comment: <value of string>
+            # devid: <value of string>
+            # expire: <value of string>
+            # srcip: <value of string>
+            # srcip_mode: <value in [UDP514, TCP514, any]>
+            # type: <value in [unspecified, devid, srcip]>
   
 
 

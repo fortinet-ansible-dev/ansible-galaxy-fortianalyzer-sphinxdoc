@@ -639,7 +639,7 @@ Parameters
  </li>
  <li><span class="li-head">unencrypted_logging</span> Enable/Disable receiving syslog through UDP(514) or TCP(514) un-encrypted. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
  <div id="label227" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.1 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">log_interval_dev_no_logging</span> Interval in minute of no log received from a device when considering the device down. <span class="li-normal">type: int</span>  <span class="li-normal">default: 15</span>  <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
@@ -654,7 +654,22 @@ Parameters
  </li>
  <li><span class="li-head">legacy_auth_mode</span> Enable/Disable legacy mode of device authentication by username/password. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
  <div id="label233" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">FFW_custom_field1</span> <span class="li-normal">type: str</span>  <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
+ <div id="label235" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">unencrypted_logging_tcp</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
+ <div id="label237" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">unencrypted_logging_udp</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
+ <div id="label239" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -674,6 +689,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     connection: httpapi
     hosts: fortianalyzers
     tasks:

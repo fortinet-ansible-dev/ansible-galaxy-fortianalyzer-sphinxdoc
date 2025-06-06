@@ -95,6 +95,9 @@ Parameters
               <li><span class="li-required">cli_fmupdate_fdssetting_updateschedule</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
               </li>
+              <li><span class="li-required">cli_fmupdate_fgdsetting</span> - available versions:
+              <span class="li-normal">>= 7.6.3</span>
+              </li>
               <li><span class="li-required">cli_fmupdate_fwmsetting</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
               </li>
@@ -120,13 +123,13 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_fgdsetting</span> - available versions:
-              <span class="li-normal">>= 6.2.1</span>
+              <span class="li-normal">6.2.1-7.6.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_fgdsetting_serveroverride</span> - available versions:
-              <span class="li-normal">>= 6.2.1</span>
+              <span class="li-normal">6.2.1-7.6.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_fgdsetting_serveroverride_servlist</span> - available versions:
-              <span class="li-normal">>= 6.2.1</span>
+              <span class="li-normal">6.2.1-7.6.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_webspam_webproxy</span> - available versions:
               <span class="li-normal">6.2.1-7.4.0</span>
@@ -360,7 +363,10 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_devicedisable</span> - available versions:
-              <span class="li-normal">>= 6.4.4</span>
+              <span class="li-normal">6.4.4-7.6.2</span>
+              </li>
+              <li><span class="li-required">cli_system_log_deviceselector</span> - available versions:
+              <span class="li-normal">>= 7.6.3</span>
               </li>
               <li><span class="li-required">cli_system_log_fospolicystats</span> - available versions:
               <span class="li-normal">>= 7.0.2</span>
@@ -923,6 +929,9 @@ Parameters
                   </ul>
             </ul>
             <li><span class="li-normal">params for <b>cli_fmupdate_fdssetting_updateschedule</b>:</span> None</li>
+            <ul class="ul-self">
+            </ul>
+            <li><span class="li-normal">params for <b>cli_fmupdate_fgdsetting</b>:</span> None</li>
             <ul class="ul-self">
             </ul>
             <li><span class="li-normal">params for <b>cli_fmupdate_fwmsetting</b>:</span> None</li>
@@ -1504,6 +1513,17 @@ Parameters
             <li><span class="li-normal">params for <b>cli_system_log_devicedisable</b>:</span> </li>
             <ul class="ul-self">
                 <li><span class="li-required">device-disable</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_log_deviceselector</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">device-selector</span> (Required)</li>
                 <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
                 <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
                 <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>

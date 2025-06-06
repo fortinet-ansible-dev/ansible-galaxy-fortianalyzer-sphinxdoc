@@ -110,6 +110,7 @@ Examples
 .. code-block:: yaml+jinja
 
   - name: Example playbook
+    gather_facts: false
     hosts: fortianalyzers
     connection: httpapi
     vars:
