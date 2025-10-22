@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -263,7 +263,7 @@ Parameters
  </li>
  <li><span class="li-head">hidden</span> Hidden administrator. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">ipv6_trusthost1</span> Admin user trusted host IPv6, default ::/0 for all. <span class="li-normal">type: str</span>  <span class="li-normal">default: ::/0</span>  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
@@ -565,27 +565,32 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">fortiai</span> Enable/disble FortiAI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">old_password</span> Old password. <span class="li-normal">type: str</span>  <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
  <div id="label193" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">fortiai</span> Enable/disble FortiAI. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">policy_block</span> <span class="li-normal">type: list of dict</span>
- <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
- <div id="label195" style="display:none">
+ <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">policy_block_name</span> Policy block names. <span class="li-normal">type: str</span>  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
- <div id="label197" style="display:none">
+ <li><span class="li-head">policy_block_name</span> Policy block names. <span class="li-normal">type: str</span>  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
- <li><span class="li-head">old_password</span> <span class="li-normal">type: str</span>  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
- <div id="label199" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <li><span class="li-head">autoreg_user</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

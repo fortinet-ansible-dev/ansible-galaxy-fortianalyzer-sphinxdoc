@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -238,7 +238,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_support_fsa</span> Supported FortiSandbox versions. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [1.x, 2.x, 3.x, 3.0, 3.1, 3.2, 4.x]</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">system_support_fsa</span> Supported FortiSandbox versions. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [1.x, 2.x, 3.x, 3.0, 3.1, 3.2, 4.x, 5.x]</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
@@ -303,7 +303,7 @@ Parameters
  </li>
  <li><span class="li-head">system_support_faz</span> Supported FortiAnalyzer versions. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [6.x, 7.x]</span>  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">system_support_fis</span> Supported FortiIsolator versions. <span class="li-normal">type: list</span> <span class="li-normal">elements: str</span> <span class="li-normal">choices: [1.x, 2.x]</span>  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>

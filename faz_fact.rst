@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 Parameters
@@ -102,7 +102,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_fmupdate_fwmsetting_upgradetimeout</span> - available versions:
-              <span class="li-normal">7.0.5-7.0.13, >= 7.2.2</span>
+              <span class="li-normal">7.0.5-7.0.14, >= 7.2.2</span>
               </li>
               <li><span class="li-required">cli_fmupdate_multilayer</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -264,7 +264,7 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_docker</span> - available versions:
-              <span class="li-normal">6.2.1-6.2.1, >= 6.4.1</span>
+              <span class="li-normal">6.2.1-6.2.1, 6.4.1-7.0.13, 7.2.0-7.2.10, 7.4.0-7.4.7, 7.6.0-7.6.3</span>
               </li>
               <li><span class="li-required">cli_system_fips</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -307,6 +307,30 @@ Parameters
               </li>
               <li><span class="li-required">cli_system_localinpolicy6</span> - available versions:
               <span class="li-normal">>= 7.2.0</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy6_dport</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy6_dst</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy6_intf</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy6_src</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy_dport</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy_dst</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy_intf</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
+              <li><span class="li-required">cli_system_localinpolicy_src</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
               </li>
               <li><span class="li-required">cli_system_locallog_disk_filter</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -363,10 +387,10 @@ Parameters
               <span class="li-normal">>= 6.2.1</span>
               </li>
               <li><span class="li-required">cli_system_log_devicedisable</span> - available versions:
-              <span class="li-normal">6.4.4-7.6.2</span>
+              <span class="li-normal">6.4.4-7.4.6, 7.6.0-7.6.2</span>
               </li>
               <li><span class="li-required">cli_system_log_deviceselector</span> - available versions:
-              <span class="li-normal">>= 7.6.3</span>
+              <span class="li-normal">7.4.7-7.4.8, >= 7.6.3</span>
               </li>
               <li><span class="li-required">cli_system_log_fospolicystats</span> - available versions:
               <span class="li-normal">>= 7.0.2</span>
@@ -764,6 +788,9 @@ Parameters
               <li><span class="li-required">report_config_schedule_reportlayout</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
               </li>
+              <li><span class="li-required">report_configfile_export</span> - available versions:
+              <span class="li-normal">>= 7.6.4</span>
+              </li>
               <li><span class="li-required">report_graphfile</span> - available versions:
               <span class="li-normal">>= 7.2.2</span>
               </li>
@@ -828,7 +855,7 @@ Parameters
               <span class="li-normal">>= 7.0.0</span>
               </li>
               <li><span class="li-required">soar_task_monitor</span> - available versions:
-              <span class="li-normal">6.4.2-7.4.6, >= 7.6.2</span>
+              <span class="li-normal">6.4.2-7.4.8, >= 7.6.2</span>
               </li>
               <li><span class="li-required">sys_ha_status</span> - available versions:
               <span class="li-normal">>= 6.2.1</span>
@@ -1448,6 +1475,102 @@ Parameters
             <li><span class="li-normal">params for <b>cli_system_localinpolicy6</b>:</span> </li>
             <ul class="ul-self">
                 <li><span class="li-required">local-in-policy6</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy6_dport</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">dport</span> (Required)</li>
+                <li><span class="li-required">local-in-policy6</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy6_dst</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">dst</span> (Required)</li>
+                <li><span class="li-required">local-in-policy6</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy6_intf</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">intf</span> (Required)</li>
+                <li><span class="li-required">local-in-policy6</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy6_src</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">local-in-policy6</span> (Required)</li>
+                <li><span class="li-required">src</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy_dport</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">dport</span> (Required)</li>
+                <li><span class="li-required">local-in-policy</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy_dst</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">dst</span> (Required)</li>
+                <li><span class="li-required">local-in-policy</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy_intf</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">intf</span> (Required)</li>
+                <li><span class="li-required">local-in-policy</span> (Required)</li>
+                <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
+                <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
+                <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
+                <li><span class="li-required">option</span> (Optional) Set fetch option for the request. If no option is specified, by default the attributes of the objects will be returned. <b>count</b> - Return the number of matching entries instead of the actual entry data. <b>syntax</b> - Return the attribute syntax of a table or an object, instead of the actual entry data. All filter parameters will be ignored.</li>
+                  <ul class="ul-self">
+                      <li>Enum: ['count', 'syntax']</li>
+                  </ul>
+            </ul>
+            <li><span class="li-normal">params for <b>cli_system_localinpolicy_src</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">local-in-policy</span> (Required)</li>
+                <li><span class="li-required">src</span> (Required)</li>
                 <li><span class="li-required">fields</span> (Optional) Limit the output by returning only the attributes specified in the string array. If none specified, all attributes will be returned.</li>
                 <li><span class="li-required">filter</span> (Optional) Filter the result according to a set of criteria.</li>
                 <li><span class="li-required">loadsub</span> (Optional) Enable or disable the return of any sub-objects. If not specified, the default is to return all sub-objects.</li>
@@ -2307,7 +2430,7 @@ Parameters
                 <li><span class="li-required">adom</span> (Required)</li>
                 <li><span class="li-required">attachtype</span> (Optional) The attachment type.</li>
                   <ul class="ul-self">
-                      <li>Enum: ['alertevent', 'note', 'file', 'report', 'log', 'comment', 'logsearchfilter', 'uploadfile']</li>
+                      <li>Enum: ['alertevent', 'note', 'file', 'report', 'log', 'comment', 'logsearchfilter', 'uploadfile', 'history', 'sysnote', 'enrichment']</li>
                   </ul>
                 <li><span class="li-required">incid</span> (Optional) The incident ID.</li>
                   <ul class="ul-self">
@@ -2324,7 +2447,7 @@ Parameters
                 <li><span class="li-required">adom</span> (Required)</li>
                 <li><span class="li-required">attachtype</span> (Optional) The attachment type.</li>
                   <ul class="ul-self">
-                      <li>Enum: ['alertevent', 'log', 'comment', 'logsearchfilter', 'uploadfile', 'report']</li>
+                      <li>Enum: ['alertevent', 'log', 'comment', 'logsearchfilter', 'uploadfile', 'report', 'note', 'file', 'history', 'sysnote', 'enrichment']</li>
                   </ul>
                 <li><span class="li-required">incid</span> (Optional) The incident ID.</li>
                   <ul class="ul-self">
@@ -2577,6 +2700,12 @@ Parameters
             <ul class="ul-self">
                 <li><span class="li-required">adom</span> (Required)</li>
                 <li><span class="li-required">schedule_name</span> (Required)</li>
+            </ul>
+            <li><span class="li-normal">params for <b>report_configfile_export</b>:</span> </li>
+            <ul class="ul-self">
+                <li><span class="li-required">adom</span> (Required)</li>
+                <li><span class="li-required">layout-id</span> (Optional) ID of the exported layout.</li>
+                <li><span class="li-required">name</span> (Optional) Title of the exported layout.</li>
             </ul>
             <li><span class="li-normal">params for <b>report_graphfile</b>:</span> </li>
             <ul class="ul-self">

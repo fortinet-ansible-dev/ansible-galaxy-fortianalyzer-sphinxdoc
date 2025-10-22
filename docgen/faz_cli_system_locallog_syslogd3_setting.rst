@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility

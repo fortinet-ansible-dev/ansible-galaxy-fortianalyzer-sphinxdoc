@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -241,30 +241,6 @@ Examples
     connection: httpapi
     hosts: fortianalyzers
     tasks:
-      - name: Physical interfaces that belong to the aggregate or redundant interface.
-        fortinet.fortianalyzer.faz_cli_system_interface:
-          state: present
-          cli_system_interface:
-            name: fooaggregate
-            status: up
-            type: aggregate
-      - name: Create faz_cli_system_interface_member.
-        fortinet.fortianalyzer.faz_cli_system_interface_member:
-          cli_system_interface_member:
-            interface_name: port4
-          interface: fooaggregate
-          state: present
-    vars:
-      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
-      ansible_httpapi_port: 443
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-  
-  - name: Example playbook
-    gather_facts: false
-    connection: httpapi
-    hosts: fortianalyzers
-    tasks:
       - name: Interface configuration.
         fortinet.fortianalyzer.faz_cli_system_interface:
           cli_system_interface:
@@ -283,6 +259,30 @@ Examples
             name: port2
             status: down
             # type: physical
+          state: present
+    vars:
+      ansible_network_os: fortinet.fortianalyzer.fortianalyzer
+      ansible_httpapi_port: 443
+      ansible_httpapi_use_ssl: true
+      ansible_httpapi_validate_certs: false
+  
+  - name: Example playbook
+    gather_facts: false
+    connection: httpapi
+    hosts: fortianalyzers
+    tasks:
+      - name: Physical interfaces that belong to the aggregate or redundant interface.
+        fortinet.fortianalyzer.faz_cli_system_interface:
+          state: present
+          cli_system_interface:
+            name: fooaggregate
+            status: up
+            type: aggregate
+      - name: Create faz_cli_system_interface_member.
+        fortinet.fortianalyzer.faz_cli_system_interface_member:
+          cli_system_interface_member:
+            interface_name: port4
+          interface: fooaggregate
           state: present
     vars:
       ansible_network_os: fortinet.fortianalyzer.fortianalyzer

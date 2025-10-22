@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -65,12 +65,12 @@ Parameters
  <ul class="ul-self">
  <li><span class="li-head">entropy_token</span> Enable/disable entropy token when switching to FIPS mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [enable, disable, dynamic]</span>  <span class="li-normal">default: enable</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">re_seed_interval</span> Kernel FIPS-compliant PRNG re-seed interval (0 to 1440 minutes) <span class="li-normal">type: int</span>  <span class="li-normal">default: 1440</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">status</span> Enable/disable FIPS-CC mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>

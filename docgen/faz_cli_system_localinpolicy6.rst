@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -99,6 +99,11 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">description</span> <span class="li-normal">type: str</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -139,6 +144,7 @@ Examples
             # intf: <value of string>
             # protocol: <value in [tcp, udp, tcp_udp]>
             # src: <value of string>
+            # description: <value of string>
   
 
 

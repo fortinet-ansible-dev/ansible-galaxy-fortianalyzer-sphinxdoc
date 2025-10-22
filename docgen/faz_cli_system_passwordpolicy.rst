@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -88,14 +88,14 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">password_history</span> Number of unique new passwords that must be used before old password can be reused (0 - 20). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">login_lockout_upon_downgrade</span> Enable/disable administrative user login lockout upon downgrade (defaut = disable). If enabled, downgrading the FortiOS firmware to a lower version where safer passwords are unsupported will lock out administrative users. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">login_lockout_upon_downgrade</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">password_history</span> Number of unique new passwords that must be used before old password can be reused (0 - 20). <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
  </ul>

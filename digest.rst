@@ -625,6 +625,62 @@ The modules of API https://fndn.fortinet.net/index.php?/fortiapi/175-fortianalyz
   <td>/cli/global/system/local-in-policy6<br>/cli/global/system/local-in-policy6/{local-in-policy6}</td>
   </tr>
   <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy6_dport.html">faz_cli_system_localinpolicy6_dport</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy6</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy6/{local-in-policy6}/dport<br>/cli/global/system/local-in-policy6/{local-in-policy6}/dport/{dport}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy6_dst.html">faz_cli_system_localinpolicy6_dst</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy6</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy6/{local-in-policy6}/dst<br>/cli/global/system/local-in-policy6/{local-in-policy6}/dst/{dst}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy6_intf.html">faz_cli_system_localinpolicy6_intf</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy6</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy6/{local-in-policy6}/intf<br>/cli/global/system/local-in-policy6/{local-in-policy6}/intf/{intf}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy6_src.html">faz_cli_system_localinpolicy6_src</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy6</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy6/{local-in-policy6}/src<br>/cli/global/system/local-in-policy6/{local-in-policy6}/src/{src}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy_dport.html">faz_cli_system_localinpolicy_dport</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy/{local-in-policy}/dport<br>/cli/global/system/local-in-policy/{local-in-policy}/dport/{dport}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy_dst.html">faz_cli_system_localinpolicy_dst</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy/{local-in-policy}/dst<br>/cli/global/system/local-in-policy/{local-in-policy}/dst/{dst}</td>
+  </tr>
+  <tr class="row-odd">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy_intf.html">faz_cli_system_localinpolicy_intf</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy/{local-in-policy}/intf<br>/cli/global/system/local-in-policy/{local-in-policy}/intf/{intf}</td>
+  </tr>
+  <tr class="row-even">
+  <td><a class="reference external" href="docgen/faz_cli_system_localinpolicy_src.html">faz_cli_system_localinpolicy_src</a></td>
+  <td><code class="docutils literal notranslate"><span class="pre">add</span></code><br><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
+  <td><code class="docutils literal notranslate"><span class="pre">local-in-policy</span></code></td>
+  <td>None</td>
+  <td>/cli/global/system/local-in-policy/{local-in-policy}/src<br>/cli/global/system/local-in-policy/{local-in-policy}/src/{src}</td>
+  </tr>
+  <tr class="row-odd">
   <td><a class="reference external" href="docgen/faz_cli_system_locallog_disk_filter.html">faz_cli_system_locallog_disk_filter</a></td>
   <td><code class="docutils literal notranslate"><span class="pre">get</span></code><br><code class="docutils literal notranslate"><span class="pre">set</span></code><br><code class="docutils literal notranslate"><span class="pre">update</span></code></td>
   <td>None</td>

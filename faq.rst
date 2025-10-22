@@ -4,6 +4,7 @@ Frequently Asked Questions (FAQ)
 |
 
 **TABLE OF CONTENTS:**
+ - `How To Specify General Variables In One Place?`_
  - `What You Need To Know About Logging.`_
  - `When to Use Parameter bypass_validation?`_
  - `How To Monitor FortiAnalyzer Task?`_
@@ -12,6 +13,74 @@ Frequently Asked Questions (FAQ)
  - `Error: No fact modules available and we could not find a fact module for your network OS`_
 
 |
+
+
+How To Specify General Variables In One Place?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can specify general variables in one place by using module_defaults.
+
+By using "group/fortinet.fortianalyzer.all", you can specify the general variables for all modules.
+By using "group/fortinet.fortianalyzer.adom", you can specify the adom value for all modules that support adom.
+
+::
+
+   - name: Your playbook.
+     hosts: fortianalyzers
+     connection: httpapi
+     module_defaults:
+       group/fortinet.fortianalyzer.all:
+         enable_log: true
+         # access_token: "YOUR ACCESS TOKEN"
+         # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
+         # rc_succeeded: [0, -2, -3]
+         # rc_failed: [-2, -3]
+       group/fortinet.fortianalyzer.adom:
+         adom: "root"
+       group/fortinet.fortianalyzer.state:
+         state: "present"  # present (create/update) or absent (delete)
+     tasks:
+       - name: Your task
+         fortinet.fortianalyzer.faz_<module>:
+           <param>: <value>
+
+Here is an example:
+
+::
+
+   - name: Set module defaults.
+     hosts: fortianalyzers
+     connection: httpapi
+     module_defaults:
+       group/fortinet.fortianalyzer.all:
+         enable_log: true
+         # access_token: "YOUR ACCESS TOKEN"
+         # forticloud_access_token: "YOUR CLOUD ACCESS TOKEN"
+         # rc_succeeded: [0, -2, -3]
+         # rc_failed: [-2, -3]
+       group/fortinet.fortianalyzer.adom:
+         adom: "root"
+       group/fortinet.fortianalyzer.state:
+         state: present  # present (create/update) or absent (delete)
+     tasks:
+       - name: Get fact.
+         fortinet.fortianalyzer.faz_fact:
+           enable_log: false # Already set in module_defaults, yet you can override module default settings
+           facts:
+             selector: "dvmdb_device"
+             params:
+               adom: root
+       - name: Create device group table.
+         fortinet.fortianalyzer.faz_dvmdb_group:
+           # enable_log: true      # Already set in module_defaults
+           # adom: root            # Already set in module_defaults
+           # state: present        # Already set in module_defaults
+           dvmdb_group:
+             name: foogroup
+             os_type: fos
+             type: normal
+             desc: Created by Ansible
+
 
 What You Need To Know About Logging. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -263,7 +263,7 @@ Parameters
  </li>
  <li><span class="li-head">conf_status</span> <span class="li-normal">type: int</span>  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -540,12 +540,12 @@ Parameters
  </li>
  <li><span class="li-head">vm_lic_overdue_since</span> <span class="li-normal">type: int</span>  <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
  <div id="label187" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.12 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">first_tunnel_up</span> <span class="li-normal">type: int</span>  <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
  <div id="label189" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">eip</span> <span class="li-normal">type: str</span>  <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
@@ -560,12 +560,12 @@ Parameters
  </li>
  <li><span class="li-head">hw_generation</span> <span class="li-normal">type: int</span>  <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
  <div id="label195" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ha_vsn</span> <span class="li-normal">type: str</span>  <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
  <div id="label197" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">relver_info</span> <span class="li-normal">type: str</span>  <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
@@ -580,11 +580,16 @@ Parameters
  </li>
  <li><span class="li-head">vm_payg_status</span> <span class="li-normal">type: int</span>  <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
  <div id="label203" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cluster_worker</span> <span class="li-normal">type: str</span>  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">sov_sase_license</span> <span class="li-normal">type: str</span>  <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
  <div id="label205" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cluster_worker</span> <span class="li-normal">type: str</span>  <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>

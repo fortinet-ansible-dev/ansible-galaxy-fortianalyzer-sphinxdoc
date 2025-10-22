@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -106,22 +106,22 @@ Parameters
  </li>
  <li><span class="li-head">ca_cert</span> CA of server certificate. <span class="li-normal">type: str</span>  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">client_cert</span> Client certificate. <span class="li-normal">type: str</span>  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">message_authenticator</span> Require Message-Authenticator attribute. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [optional, require]</span>  <span class="li-normal">default: optional</span>  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">protocol</span> Transport protocol. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [udp, tls]</span>  <span class="li-normal">default: udp</span>  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

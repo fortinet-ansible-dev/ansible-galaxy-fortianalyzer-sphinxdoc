@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -265,17 +265,17 @@ Parameters
  </li>
  <li><span class="li-head">aid</span> Log aid messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v7.2.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.1 -> v7.2.11</code></p>
  </div>
  </li>
  <li><span class="li-head">docker</span> Docker application generic messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.4.3 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">controller</span> Controller application generic messages. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.9 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.4 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.1 -> latest</code></p>
  </div>
  </li>
  </ul>

@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -80,7 +80,7 @@ Parameters
  </li>
  <li><span class="li-head">sche_rpt_only</span> Enable/disable auto-cache on scheduled reports only. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.8 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  </ul>

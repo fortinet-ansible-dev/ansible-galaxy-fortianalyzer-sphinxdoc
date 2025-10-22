@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -301,7 +301,7 @@ Parameters
  </li>
  <li><span class="li-head">stat_log</span> stat log setting (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [emergency, alert, critical, error, warn, notice, info, debug, disable]</span>  <span class="li-normal">default: disable</span>  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.2 -> v7.6.2</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.10 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.5 -> v7.2.11</code>, <code class="docutils literal notranslate">v7.4.2 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">iotv_preload</span> Enable/disable preloading IoT-Vulnerability database to memory (default = disable). <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>

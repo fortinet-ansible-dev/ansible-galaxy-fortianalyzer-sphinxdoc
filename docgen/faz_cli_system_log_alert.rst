@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -66,6 +66,11 @@ Parameters
  <li><span class="li-head">max_alert_count</span> Maximum number of alerts supported. <span class="li-normal">type: int</span>  <span class="li-normal">default: 10000</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">min_severity_to_raise_incident_by_grouping</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, critical, high]</span>  <span class="li-normal">default: critical</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <div id="label3" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

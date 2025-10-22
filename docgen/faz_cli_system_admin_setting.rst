@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -195,7 +195,7 @@ Parameters
  </li>
  <li><span class="li-head">fsw_ignore_platform_check</span> Enable/disable FortiSwitch Manager switch platform support check. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.7 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">firmware_upgrade_check</span> Enable/disable firmware upgrade check. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
@@ -213,18 +213,23 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">object_threshold_limit</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">admin_scp</span> Enable/disable admin SCP. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.8</code></p>
  </div>
  </li>
- <li><span class="li-head">object_threshold_limit_value</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span>  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">object_threshold_limit</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">show_sdwan_manager</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">object_threshold_limit_value</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 80</span>  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">show_sdwan_manager</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: enable</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>

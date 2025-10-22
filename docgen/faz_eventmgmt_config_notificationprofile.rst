@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -128,6 +128,26 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">notify_sched</span> enable(1) or disable(0) notification schedule <span class="li-normal">type: int</span>  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">notify_time_start</span> time format in hh:mm <span class="li-normal">type: str</span>  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">notify_time_stop</span> time format in hh:mm <span class="li-normal">type: str</span>  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">notify_week_days</span> weekday opts(sunday:1,monday:2,tuesday:4,wednesday:8,thursday:16,friday:32,saturday:64) <span class="li-normal">type: int</span>  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -174,6 +194,10 @@ Examples
             # snmp_community: <value of string>
             # snmpv3_user: <value of string>
             # syslog_svr: <value of string>
+            # notify_sched: <value of integer>
+            # notify_time_start: <value of string>
+            # notify_time_stop: <value of string>
+            # notify_week_days: <value of integer>
   
 
 

@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -184,7 +184,7 @@ Parameters
  </li>
  <li><span class="li-head">fortirecorder_setting</span> FortiRecorder settings. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.1 -> v7.2.11</code></p>
  </div>
  </li>
  <li><span class="li-head">log_viewer</span> Log viewer. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
@@ -234,7 +234,7 @@ Parameters
  </li>
  <li><span class="li-head">extension_access</span> Manage extension access. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.0 -> v7.2.10</code>, <code class="docutils literal notranslate">v7.4.0 -> v7.4.7</code>, <code class="docutils literal notranslate">v7.6.0 -> v7.6.3</code></p>
  </div>
  </li>
  <li><span class="li-head">run_report</span> Run reports. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
@@ -369,7 +369,7 @@ Parameters
  </li>
  <li><span class="li-head">device_fortiextender</span> Manage FortiExtender. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
  <div id="label121" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.13</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.0.4 -> v7.0.14</code>, <code class="docutils literal notranslate">v7.2.1 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ips_lock</span> IPS locking <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
@@ -416,6 +416,11 @@ Parameters
  <li><span class="li-head">adom_admin</span> Enable Adom Admin. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [disable, enable]</span>  <span class="li-normal">default: disable</span>  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">script_run</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [none, read, read-write]</span>  <span class="li-normal">default: none</span>  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
+ <div id="label139" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>

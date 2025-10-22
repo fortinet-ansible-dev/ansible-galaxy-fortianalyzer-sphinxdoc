@@ -35,7 +35,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
@@ -179,7 +179,7 @@ Parameters
  </li>
  <li><span class="li-head">ssl_protocol</span> set the lowest SSL protocol version for connection to ldap server. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [follow-global-ssl-protocol, sslv3, tlsv1.0, tlsv1.1, tlsv1.2, tlsv1.3]</span>  <span class="li-normal">default: follow-global-ssl-protocol</span>  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>

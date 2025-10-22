@@ -4,8 +4,8 @@
 
 .. _faz_cli_system_log_deviceselector:
 
-faz_cli_system_log_deviceselector -- Cli system log device selector
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+faz_cli_system_log_deviceselector -- Accept/reject devices matching specified filter types.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.9.0
 
@@ -35,14 +35,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible>=2.16.0
 
 
 FortiAnalyzer Version Compatibility
 ------------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
 
 
 
@@ -62,46 +62,46 @@ Parameters
  <li><span class="li-head">rc_succeeded</span> The rc codes list with which the conditions to succeed will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">rc_failed</span> The rc codes list with which the conditions to fail will be overriden <span class="li-normal">type: list</span> </li>
  <li><span class="li-head">state</span> The directive to create, update or delete an object <span class="li-normal">type: str</span> <span class="li-required">required: true</span> <span class="li-normal"> choices: present, absent</span> </li>
- <li><span class="li-head">cli_system_log_deviceselector</span> Cli system log device selector <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">cli_system_log_deviceselector</span> Accept/reject devices matching specified filter types. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">action</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [include, exclude]</span>  <span class="li-normal">default: include</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">action</span> Include or exclude the matching devices. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [include, exclude]</span>  <span class="li-normal">default: include</span>  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">comment</span> <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">comment</span> Additional comment for the selector. <span class="li-normal">type: str</span>  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">devid</span> <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">devid</span> Device ID. Wildcard matching supported. <span class="li-normal">type: str</span>  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">expire</span> <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">expire</span> Expiration time of the selector. <span class="li-normal">type: str</span>  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">id</span> <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">id</span> ID of device selector entry. <span class="li-normal">type: int</span>  <span class="li-normal">default: 0</span>  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcip</span> <span class="li-normal">type: str</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">srcip</span> Source IP or IP range. <span class="li-normal">type: str</span>  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">srcip_mode</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [UDP514, TCP514, any]</span>  <span class="li-normal">default: UDP514</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">srcip_mode</span> Apply the selector to UDP/514, TCP/514 or any mode. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [UDP514, TCP514, any]</span>  <span class="li-normal">default: UDP514</span>  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, devid, srcip]</span>  <span class="li-normal">default: unspecified</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <li><span class="li-head">type</span> Type of the selector. <span class="li-normal">type: str</span>  <span class="li-normal">choices: [unspecified, devid, srcip]</span>  <span class="li-normal">default: unspecified</span>  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.7 -> v7.4.8</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -130,7 +130,7 @@ Examples
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
     tasks:
-      - name: Cli system log device selector
+      - name: Accept/reject devices matching specified filter types.
         fortinet.fortianalyzer.faz_cli_system_log_deviceselector:
           # bypass_validation: false
           # rc_succeeded: [0, -2, -3, ...]
